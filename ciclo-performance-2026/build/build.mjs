@@ -2,7 +2,11 @@
 // Uso: node build/build.mjs
 import fs from 'node:fs';
 import { makeScene } from './lib.mjs';
-import { CENAS, AUDIO_INICIO } from './cenas.mjs';
+import { CENAS as TODAS } from './cenas.mjs';
+// Para renderizar só um trecho: CENAS=mutirao,atingimento node build/build.mjs
+const SO = process.env.CENAS ? process.env.CENAS.split(',') : null;
+const CENAS = SO ? TODAS.filter(c => SO.includes(c.id)) : TODAS;
+const AUDIO_INICIO = CENAS[0].start;
 
 const r2 = n => Math.round(n * 100) / 100;
 const hosts = [];
@@ -100,7 +104,7 @@ const index = `<!doctype html>
     <div id="main" data-composition-id="main" data-start="0" data-duration="${total}" data-width="1920" data-height="1080">
       <img id="papel" class="clip" src="assets/brand/papel.jpg" alt="" data-start="0" data-duration="${total}" data-track-index="0" />
 ${hosts.join('\n')}
-      <img id="marca" class="clip" src="assets/brand/logo-azul.svg" alt="Cury" data-start="16.5" data-duration="${r2(total - 16.5)}" data-track-index="3" />
+      <img id="marca" class="clip" src="assets/brand/logo-azul.svg" alt="Cury" data-start="${r2(Math.max(0, 16.5 - AUDIO_INICIO))}" data-duration="${r2(total - Math.max(0, 16.5 - AUDIO_INICIO))}" data-track-index="3" />
       <div id="legendas" data-composition-id="legendas" data-composition-src="compositions/legendas.html" data-start="0" data-duration="${total}" data-track-index="4" data-width="1920" data-height="1080"></div>
       <audio id="narracao" src="assets/audio/narracao.m4a" data-start="0" data-duration="${total}" data-media-start="${AUDIO_INICIO}" data-volume="1" data-track-index="2"></audio>
     </div>

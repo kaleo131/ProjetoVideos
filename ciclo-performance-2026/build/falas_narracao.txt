@@ -1,137 +1,160 @@
-   0.00    2.94 Sabe qual é o momento mais tenso de uma obra?
-   2.94    7.28 Não é a fundação, tipo, nem a concretagem, é a vistoria final.
-   7.28   11.68 Bom, bem-vindos a mais um mergulho profundo no nosso conteúdo de hoje.
-  11.68   13.18 Eu sou a sua Anfitriã.
-  13.18   16.64 E eu sou o especialista. E olha, vamos ser honestos.
-  16.64   20.48 Dezembro é aquele mês em que o cansaço do ano inteiro já bateu forte, né?
-  20.48   22.36 Nossa, bate e bate muito.
-  22.36   25.72 Exato. E de repente chegar a lembrança de que é preciso provar
-  25.72   28.92 que o prédio construído nos últimos meses não vai cair.
-  28.92   32.08 Pois é. E essa vistoria já tem data marcada lá na CURI.
-  32.08   38.16 Entre 1º de dezembro e 8 de dezenero a gente tem a avaliação final do ciclo de performance 2026.
-  38.16   42.56 E a base já foi levantada pelas equipes ao longo do ano todo.
-  42.56   45.64 Tivemos o lançamento de metas lá em fevereiro e março.
-  45.64   48.94 Aí os acompanhamentos em abril, julho e outubro.
-  48.94   50.34 O PDI em maio, né?
-  50.34   54.34 Isso, o PDI em maio. E agora a indicação de clientes internos em novembro.
-  54.34   56.74 Ou seja, o prédio já está de pé.
-  56.74   58.74 Falta só a vistoria mesmo.
-  59.06   63.76 Bom, então, vamos desenhar a planta da nota para entender como a CURI divide tudo isso.
-  63.76   65.64 Como fica o peso de cada pilar.
-  65.64   70.16 A lógica é separar muito bem o que eles se chamam de o que do como.
-  70.16   75.80 Tipo, metas representam 70% da nota final, que é o que foi entregue na prática.
-  75.80   77.26 Certo, resultado final.
-  77.26   82.54 Exatamente. Já as competências valem 20% e cultura 10%.
-  82.54   85.50 Esses dois avaliam o como o trabalho foi feito,
-  85.50   87.60 medindo os comportamentos do dia a dia, sabe?
-  87.79   92.03 E assim, no mundo corporativo a gente conhece bem aquele famoso efeito mutirão, né?
-  92.03   95.33 A galera tenta correr para entregar tudo em novembro e salvar o ano.
-  95.33   97.03 Como é que o sistema evita isso?
-  97.03  101.59 Então, o desenho da avaliação combate exatamente esse comportamento.
- 101.59  104.59 A nota de metas não é uma média dos trimestres.
- 104.59  107.59 Ela é o resultado acumulado de todo o período.
- 107.59  111.55 Ah, então os acompanhamentos trimestrais funcionam como um diário de obra mesmo.
- 111.55  112.91 Perfeito, é bem isso.
- 112.91  116.95 Os tijolos vão sendo assentados de forma consistente, mês a mês.
- 116.95  121.47 E no cálculo, se o resultado final ficar abaixo do mínimo exigido, anotez zero.
- 121.47  122.75 Caramba, zero direto.
- 122.75  124.23 Direto, não tem meio termo.
- 124.23  126.27 Agora, se passar do mínimo,
- 126.27  131.43 aí a pontuação acompanha a aproximação do alvo, mas com um teto máximo de 110%.
- 131.43  132.23 Entendi.
- 132.23  135.31 Mas peraí, e naquelas metas onde o número precisa cair?
- 135.31  138.75 Tipo, redução de custos, erros, acidentes?
- 138.75  140.47 A lógica do limite se mantém.
- 140.55  144.07 Mas funciona como um jogo de golf, sabe como é no golf.
- 144.07  145.99 Que quem dá menos tacadas ganha.
- 145.99  147.03 Isso mesmo.
- 147.03  151.39 Numa meta de acidentes de trabalho, por exemplo, o zero é o troféu máximo.
- 151.39  154.35 Quem comete menos erros, ganha a nota mais alta.
- 154.35  157.39 Porque a premissa é que menor é melhor.
- 157.39  158.83 Faz total sentido.
- 158.83  161.87 Bom, vamos entrar nos 30% do como.
- 161.87  164.87 A escala de avaliação de competências mudou na cura, né?
- 164.87  169.83 Antes, as opções usavam só palavras tipo nunca, raramente e às vezes.
- 169.83  173.11 É, frequentemente e superas expectativas.
- 173.11  173.71 Exato.
- 173.71  176.91 E por que trocaram isso por uma escala numérica de zero a dez?
- 176.91  180.75 Porque os rótulos qualitativos trazem muita subjetividade.
- 180.75  185.83 O que significa frequentemente para um gestor pode ser só às vezes para outro.
- 185.83  189.71 Uma escala numérica de zero a dez força uma análise bem mais clínica.
- 189.71  191.75 Remove aquela carga emocional, claro.
- 191.75  192.55 Sim.
- 192.55  194.91 Então agora a escala tem seis faixas.
- 194.91  198.75 Notas de zero a dois indicam muito abaixo do esperado.
- 198.79  200.99 Três a quatro abaixo do esperado.
- 200.99  203.99 Cinco a seis atende parcialmente.
- 203.99  208.03 E aqui acho super importante fazer uma alerta contra aquela ansiedade corporativa.
- 208.03  211.67 Tirar sete ou oito significa atender o esperado.
- 211.67  213.59 Fundamental desmistificar isso.
- 213.59  217.35 Tem muita gente com pânico de que nota sete está na corda bamba.
- 217.35  218.75 E pelo contrário.
- 218.75  219.79 Não é ruim, né?
- 219.79  220.47 Não mesmo.
- 220.47  224.35 O nove já é acima do esperado e o dez é referência.
- 224.35  226.87 E olha só, para travar subjetividade,
- 226.87  231.87 notas de zero a dois e a nota dez exigem justificativa detalhada obrigatória.
- 231.87  233.47 Muito bem pensado.
- 233.47  235.23 Mas mudando de assunto rapidinho,
- 235.23  240.03 deixar 100% do peso das competências na mão da chefia na meio arriscado.
- 240.03  242.19 A auto-avaliação não conta no cálculo.
- 242.19  245.91 E esse é um ponto vital do design de ARH da Curie.
- 245.91  249.43 A auto-avaliação existe no ciclo e é crucial para a reflexão.
- 249.43  253.75 Mas não tem peso matemático porque as réguas pessoais variam muito, sabe?
- 253.75  255.75 Distorceria a nota de todo mundo.
- 255.75  259.43 Ah, então em competências o gestor tem peso de 100%
- 259.43  262.19 e a auto-avaliação fica de fora do cálculo final.
- 262.19  263.35 Exato.
- 263.35  265.63 Mas em cultura, a dinâmica muda.
- 265.63  271.23 O gestor vale 70% e os outros 30% vem da média de dois clientes internos.
- 271.23  272.07 Legal.
- 272.07  274.71 E quem escolhe esses clientes internos?
- 274.71  276.19 São duas indicações.
- 276.19  279.31 Uma feita pelo próprio profissional e outra pelo gestor.
- 279.31  283.03 Uma avaliação bem completa, além do líder direto, então.
- 283.03  287.35 E vale reforçar que as notas desses clientes internos são confidenciais.
- 287.35  288.75 Ninguém vê quem deu o quê.
- 288.75  289.51 Com certeza.
- 289.51  292.55 Mas vamos materializar tudo isso para quem está acompanhando a gente
- 292.55  293.91 não se perder nas regras.
- 293.91  296.47 Como essa matemática funciona na vida real?
- 296.47  298.99 Vamos usar o exemplo exato da nossa fonte.
- 298.99  302.03 Imagine alguém que teve um desempenho espetacular em metas.
- 302.03  303.91 E tirou 97%.
- 303.91  308.47 Como isso vale 70%, temos 67,9 pontos.
- 308.47  311.75 Certo. Anotei aqui. 67,9.
- 311.75  316.79 Aí em competências, o gestor avaliou com nota 8, ou seja, 80%.
- 316.79  320.71 Multiplicando pelo peso de 20% da 16 pontos.
- 320.71  322.15 Uhum.
- 322.15  323.55 E em cultura?
- 323.55  326.03 Em cultura, o gestor deu 9.
- 326.03  328.19 E os clientes internos deram 8.
- 328.19  335.23 A ponderação fecha em 87%, que vezes os 10% de peso resultem 8,7 pontos.
- 335.23  341.31 A soma final fica 67,9 mais 16 mais 8,7.
- 341.31  344.87 O que dá um total cravado de 92,6%.
- 344.87  346.07 Exatamente.
- 346.07  348.63 O recado nas entrelinhas é bem claro.
- 348.63  351.63 Se a pessoa for um higênio que bate todas as metas,
- 351.63  354.83 mas for um trator que desrespeita os colegas o ano todo,
- 354.83  358.23 as notas de competências e cultura vão derrubar o resultado final.
- 358.23  359.31 Vão mesmo.
- 359.31  361.79 E quando essa conta toda se encerra,
- 361.79  364.47 vem a etapa fundamental para o desenvolvimento.
- 364.47  367.11 O feedback presencial com o gestor.
- 367.11  369.19 Que não é só conferir um número na tela, né?
- 369.23  371.99 Jamais, é o momento de alinhar rotas.
- 371.99  375.67 E tudo isso precisa ser lançado obrigatoriamente no sistema,
- 375.67  377.99 numa etapa própria da avaliação final.
- 377.99  378.91 Perfeito.
- 378.91  382.67 Olha, para quem precisa resolver qualquer dúvida adicional sobre o ciclo da Curi,
- 382.67  388.59 o canal oficial é o email remuneração.rharrobakuri.net.
- 388.59  390.83 O nosso mergulho profundo fica por aqui hoje.
- 390.83  391.99 É isso aí.
- 391.99  393.91 E fica a provocação de sempre, pessoal.
- 393.91  394.91 Bem lembrado.
- 394.91  398.03 Fechando exatamente com a reflexão que puxamos lá no início.
- 398.03  401.51 Se a vitoria fosse hoje, o seu prédio passaria.
- 401.51  402.27 Até a próxima!
+   0.00    2.50 Sabe qual é o momento mais tenso de uma obra?
+   2.94    6.64 Não é a fundação, tipo, nem a concretagem, é a vitoria final.
+   7.22   11.48 Bom, bem-vindos a mais um mergulho profundo no nosso conteúdo de hoje.
+  11.82   12.80 Eu sou a sua Anfitriã.
+  13.28   16.18 E eu sou especialista. E olha, vamos ser honestos.
+  16.70   20.20 Dezembro é aquele mês em que o cansaço do ano inteiro já bateu forte, né?
+  20.56   22.20 Nossa, bate e bate muito.
+  22.44   25.76 Exato. E de repente chegar lembrança de que é preciso provar
+  25.76   28.54 que o prédio construído nos últimos meses não vai cair.
+  28.54   32.16 Pois é. E essa vitoria já tem data marcada lá na CURI.
+  32.22   37.80 Entre 1º de dezembro e 8 de dezenero a gente tem a avaliação final do ciclo de performance 2026.
+  38.56   42.16 E a base já foi levantada pelas equipes ao longo do ano todo.
+  42.70   45.48 Tivemos o lançamento de metas, lá em fevereiro e março.
+  45.84   48.84 Aí os acompanhamentos em abril, julho e outubro.
+  49.02   50.22 O PDI em maio, né?
+  50.38   51.46 Isso, o PDI em maio.
+  51.64   54.18 E agora, a indicação de clientes internos em novembro.
+  54.50   56.50 Ou seja, o prédio já está de pé.
+  56.50   58.24 Falta só a vitoria mesmo.
+  58.94   63.70 Bom, então, vamos desenhar a planta da nota para entender como a CURI divide tudo isso.
+  63.82   65.08 Como fica o peso de cada pilar.
+  65.58   69.58 A lógica é separar muito bem o que eles se chamam de o que do como.
+  70.20   75.34 Tipo, metas representam 70% da nota final, que é o que foi entregue na prática.
+  75.82   76.78 Certo, resultado final.
+  77.22   77.66 Exatamente.
+  78.18   82.30 Já as competências valem 20% e cultura 10%.
+  82.30   85.22 Esses dois avaliam o como o trabalho foi feito.
+  85.22   87.44 Medindo os comportamentos do dia a dia, sabe?
+  87.88   91.80 E assim, no mundo corporativo a gente conhece bem aquele famoso efeito mutirão, né?
+  92.18   95.08 A galera tenta correr para entregar tudo em novembro e salvar o ano.
+  95.38   96.82 Como é que o sistema evita isso?
+  97.18  101.06 Então, o desenho da avaliação combate exatamente esse comportamento.
+ 101.60  104.30 A nota de metas não é uma média dos trimestres.
+ 104.60  107.12 Ela é o resultado acumulado de todo o período.
+ 107.68  111.28 Ah, então os acompanhamentos trimestrais funcionam como um diário de obra mesmo.
+ 111.52  112.60 Perfeito, é bem isso.
+ 112.60  116.44 Os tijolos vão sendo assentados de forma consistente, mês a mês.
+ 116.92  121.18 E no cálculo, se o resultado final ficar abaixo do mínimo exigido, a nota é zero.
+ 121.50  122.58 Caramba, zero direto.
+ 122.80  124.08 Direto, não tem meio termo.
+ 124.30  128.54 Agora, se passar do mínimo, aí a pontuação acompanha a aproximação do alvo,
+ 128.78  131.34 mas com um teto máximo de 110%.
+ 131.34  131.82 Entendi.
+ 132.32  134.92 Mas peraí, e naquelas metas onde o número precisa cair?
+ 135.36  138.20 Tipo, redução de custos, erros, acidentes?
+ 138.70  142.32 A lógica do limite se mantém, mas funciona como um jogo de golf.
+ 142.32  143.46 Sabe como é no golf?
+ 143.86  145.60 Que quem dá menos tacadas ganha.
+ 145.96  146.46 Isso mesmo.
+ 146.96  150.94 Numa meta de acidentes de trabalho, por exemplo, o zero é o troféu máximo.
+ 151.40  153.88 Quem comete menos erros ganha a nota mais alta,
+ 154.18  156.80 porque a premissa é que menor é melhor.
+ 157.30  158.12 Faz total sentido.
+ 158.98  162.52 Vamos dar um exemplo prático de soma matemática passo a passo, só pra fixar.
+ 162.74  163.02 Vamos lá.
+ 163.48  164.70 Imagina uma meta A.
+ 165.14  167.90 O peso dela é 30 e a pessoa bateu 100%.
+ 167.90  169.08 Então, 30 pontos.
+ 169.96  171.76 Aí, na meta B, também peso 30,
+ 171.76  176.48 ela bateu o teto de 110%, multiplicando 33 pontos.
+ 176.90  177.80 E isso vai somando?
+ 178.16  179.64 Na meta C, peso 20,
+ 180.08  182.96 a pessoa teve dificuldade e ficou em 80%.
+ 182.96  184.36 Rende 16 pontos.
+ 185.02  188.44 E na meta D, peso 20 também chegou a 90%.
+ 188.44  189.42 18 pontos.
+ 189.60  189.92 Perfeito.
+ 190.16  191.00 Somando tudo isso,
+ 191.40  193.96 30 mais 33, mais 16, mais 18,
+ 194.36  196.20 totalizamos 97%.
+ 196.72  199.16 Essa é a nota bruta de metas dessa pessoa.
+ 199.16  200.96 Exatamente. 97%.
+ 200.96  202.26 Esse é o OQ.
+ 202.54  205.04 Bom, vamos entrar nos 30% do como.
+ 205.56  208.22 A escala de avaliação de competências mudou na CURi, né?
+ 208.62  213.04 Antes, as opções usavam só palavras, tipo, nunca, raramente, às vezes.
+ 213.56  216.34 É, frequentemente, e supera as expectativas.
+ 216.80  217.18 Exato.
+ 217.50  220.22 E por que trocaram isso por uma escala numérica de 0 a 10?
+ 220.58  223.92 Porque os rótulos qualitativos trazem muita subjetividade.
+ 224.50  226.94 O que significa frequentemente pra um gestor?
+ 226.94  229.04 Pode ser só às vezes pra outro.
+ 229.48  233.06 Uma escala numérica de 0 a 10 força uma análise bem mais clínica.
+ 233.28  235.12 Remove aquela carga emocional, claro.
+ 235.50  235.72 Sim.
+ 236.24  238.24 Então, agora, a escala tem seis faixas.
+ 238.70  241.90 Notas de 0 a 2 indicam muito abaixo do esperado.
+ 242.42  244.34 3 a 4, abaixo do esperado.
+ 244.72  247.02 5 a 6, atende parcialmente.
+ 247.56  249.64 E aqui acho super importante fazer uma alerta
+ 249.64  251.32 contra aquela ansiedade corporativa.
+ 251.76  254.98 Tirar 7 ou 8 significa atender ao esperado.
+ 255.64  256.88 Fundamental desmistificar isso.
+ 257.22  260.84 Tem muita gente com pânico de que nota 7 é estar na corda-bamba.
+ 261.04  262.40 E, pelo contrário...
+ 262.40  263.32 Não é ruim, né?
+ 263.54  263.92 Não mesmo.
+ 264.16  265.82 O 9 já é acima do esperado.
+ 266.08  267.40 E o 10 é referência.
+ 268.04  270.08 E, olha só, pra travar a subjetividade,
+ 270.56  275.18 notas de 0 a 2 e a nota 10 exigem justificativa detalhada obrigatória.
+ 275.64  276.64 Muito bem pensado.
+ 277.16  278.66 Mas, mudando o assunto rapidinho,
+ 278.98  282.00 deixar 100% do peso das competências na mão da chefia
+ 282.00  283.30 na meio arriscado,
+ 283.30  285.52 a auto-avaliação não conta no cálculo.
+ 285.78  289.16 E esse é um ponto vital do design de ARH da Curie.
+ 289.54  292.68 A auto-avaliação existe no ciclo e é crucial pra reflexão.
+ 293.04  297.24 Mas não tem peso matemático, porque as réguas pessoais variam muito, sabe?
+ 297.56  298.90 Distorceria a nota de todo mundo.
+ 299.50  302.58 Ah, então, em competências, o gestor tem peso de 100%
+ 302.58  305.66 e a auto-avaliação fica de fora do cálculo final.
+ 305.90  306.32 Exato.
+ 307.08  309.06 Mas, em cultura, a dinâmica muda.
+ 309.36  311.18 O gestor vale 70%.
+ 311.18  314.46 E os outros 30% vem da média de dois clientes internos.
+ 314.92  318.02 Legal. E quem escolhe esses clientes internos?
+ 318.42  319.66 São duas indicações.
+ 319.96  322.58 Uma feita pelo próprio profissional e outra pelo gestor.
+ 323.04  326.30 Uma avaliação bem completa, além do líder direto, então.
+ 326.72  330.74 E vale reforçar que as notas desses clientes internos são confidenciais.
+ 331.10  332.12 Ninguém vê quem deu o quê.
+ 332.46  332.88 Com certeza.
+ 333.26  336.20 Mas vamos materializar tudo isso pra quem tá acompanhando a gente
+ 336.20  337.28 não se perder nas regras?
+ 337.54  339.60 Como essa matemática funciona na vida real?
+ 340.12  342.12 Vamos ao exemplo exato da nossa fonte.
+ 342.62  345.54 Imagine alguém que teve um desempenho espetacular em metas
+ 345.54  347.08 e tirou 97%.
+ 347.08  351.54 Como isso vale 70%, temos 67,9 pontos.
+ 352.16  354.74 Certo. Anotei aqui. 67,9.
+ 355.42  360.16 Aí, em competências, o gestor avaliou com nota 8, ou seja, 80%.
+ 360.16  363.84 Multiplicando pelo peso de 20%, dá 16 pontos.
+ 364.80  366.48 E em cultura?
+ 367.24  371.34 Em cultura, o gestor deu 9, e os clientes internos deram 8.
+ 371.88  378.36 A ponderação fecha em 87%, que vezes os 10% de peso resultem 8,7 pontos.
+ 378.90  384.50 A soma final fica 67,9, mais 16, mais 8,7.
+ 384.98  388.62 O que dá um total cravado de 92,6%.
+ 388.62  389.28 Exatamente.
+ 389.68  392.02 O recado nas entrelinhas é bem claro.
+ 392.38  395.14 Se a pessoa for um gênio que bate todas as metas,
+ 395.14  398.20 mas for um trator que diz respeito aos colegas o ano todo,
+ 398.56  401.80 as notas de competências e cultura vão derrubar o resultado final.
+ 401.98  402.52 Vão mesmo.
+ 403.08  407.84 E quando essa conta toda se encerra, vem a etapa fundamental para o desenvolvimento,
+ 408.28  410.54 o feedback presencial com o gestor.
+ 410.76  412.78 Que não é só conferir um número na tela, né?
+ 412.98  415.26 Jamais. É o momento de alinhar rotas.
+ 415.68  419.00 E tudo isso precisa ser lançado obrigatoriamente no sistema,
+ 419.36  421.28 numa etapa própria da avaliação final.
+ 421.66  422.14 Perfeito.
+ 422.14  426.18 Olha, para quem precisa resolver qualquer dúvida adicional sobre o ciclo da Curi,
+ 426.48  431.60 o canal oficial é o e-mail remuneração.rharrobacuri.net.
+ 431.98  434.42 O nosso mergulho profundo fica por aqui hoje.
+ 434.56  435.02 Tem isso aí.
+ 435.82  437.42 E fica a provocação de sempre, pessoal.
+ 437.68  438.20 Bem lembrado.
+ 438.62  441.36 Fechando exatamente com a reflexão que puxamos lá no início.
+ 441.78  444.68 Se a vistoria fosse hoje, o seu prédio passaria?
+ 445.28  445.74 Até a próxima.

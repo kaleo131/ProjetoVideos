@@ -1,7 +1,6 @@
 // Roteiro visual. Todos os tempos são do VÍDEO (segundo da narração em assets/audio/narracao.m4a),
 // tirados da transcrição palavra a palavra (build/palavras.json).
 // Para ajustar: mude o tempo/texto aqui e rode `node build/build.mjs`.
-export const AUDIO_INICIO = 0;
 
 export const CENAS = [
   // ---------------- CENA 1: gancho (a vistoria) + abertura ----------------
@@ -155,6 +154,149 @@ export const CENAS = [
       txt(540, 434, 'Cultura', { size: 32, w: 800, anchor: 'end' }, 81.5, 0.4);
       ink(G.arc(cx, cy, R + 34, 256, 356), { color: C.green, sw: 6 }, 83.3, 0.8);
 
+    },
+  },
+  // ---------------- CENA 4: efeito mutirão e "não é média" ----------------
+  {
+    id: 'mutirao', start: 87.8, end: 116.9,
+    desenho(s) {
+      const { txt, ink, fill, sublinha, circula, seta, clear, ilustra, G, C } = s;
+      txt(130, 120, 'METAS · 70% DA NOTA', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 87.9, 0.5);
+      txt(130, 195, 'O efeito mutirão', { size: 64, w: 800 }, 88.2, 1.0);
+      sublinha(132, 640, 222, C.green, 89.3);
+      ilustra('mutirao', { tf: 'translate(40,235) scale(0.78)' }, 89.0, 2.6);
+      txt(1300, 430, 'Tudo em', { size: 48, w: 800 }, 92.6, 0.5);
+      txt(1300, 500, 'novembro?', { size: 60, w: 900, color: C.red }, 93.6, 0.7);
+      txt(1300, 600, 'Como o sistema', { size: 36, w: 600, color: C.soft }, 95.4, 0.6);
+      txt(1300, 645, 'evita isso?', { size: 36, w: 600, color: C.soft }, 96.0, 0.5);
+      clear(97.0);
+
+      ilustra('diario', {}, 97.3, 2.6);
+      txt(1340, 300, 'A nota de metas', { size: 44, w: 700 }, 101.6, 0.7);
+      txt(1340, 365, 'NÃO é média', { size: 58, w: 900, color: C.red }, 102.5, 0.6);
+      txt(1340, 420, 'dos trimestres', { size: 40, w: 700, color: C.soft }, 103.2, 0.6);
+      ink('M1335,345 C1500,338 1640,350 1760,342', { color: C.red, sw: 7 }, 103.9, 0.4);
+      txt(1340, 530, 'É o resultado', { size: 44, w: 700 }, 104.6, 0.6);
+      txt(1340, 595, 'acumulado do período', { size: 46, w: 900, color: C.blue }, 105.3, 1.0);
+      sublinha(1340, 1820, 618, C.green, 106.5);
+      txt(1340, 720, 'Acompanhamentos =', { size: 38, w: 700 }, 108.3, 0.7);
+      txt(1340, 775, 'diário de obra', { size: 46, w: 900, color: C.dark }, 109.5, 0.7);
+      txt(1340, 860, 'tijolo por tijolo, mês a mês', { size: 34, w: 600, color: C.soft }, 112.8, 1.0);
+    },
+  },
+
+  // ---------------- CENA 5: atingimento (mínimo, alvo, teto), golfe e exemplo A–D ----------------
+  {
+    id: 'atingimento', start: 116.9, end: 202.4,
+    desenho(s) {
+      const { txt, ink, fill, shape, count, sublinha, circula, seta, clear, ilustra, G, C } = s;
+      txt(130, 120, 'METAS · ATINGIMENTO', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 117.0, 0.5);
+      txt(130, 195, 'Como a meta vira porcentagem', { size: 64, w: 800 }, 117.3, 1.3);
+      sublinha(132, 1060, 222, C.green, 118.7);
+      // régua
+      const Y = 560, X0 = 200, XM = 640, XA = 1240, XT = 1560, X1 = 1720;
+      ink(`M${X0},${Y} L${X1},${Y}`, { sw: 6 }, 117.8, 0.9);
+      fill(G.rect(X0, Y - 60, XM - X0, 60, 8), '#F4B6B3', { off: [0, 0] }, 119.0, 0.6);
+      ink(G.line(XM, Y - 90, XM, Y + 30), { sw: 5 }, 119.4, 0.3);
+      txt(XM, Y + 75, 'Mínimo', { size: 34, w: 800, anchor: 'middle' }, 119.6, 0.5);
+      txt((X0 + XM) / 2, Y - 100, 'nota 0', { size: 58, w: 900, color: C.red, anchor: 'middle' }, 121.0, 0.6);
+      txt((X0 + XM) / 2, Y + 75, 'abaixo do mínimo', { size: 28, w: 600, color: C.soft, anchor: 'middle' }, 122.6, 0.7);
+      fill(G.rect(XM, Y - 60, XA - XM, 60, 8), '#BFC8FA', { off: [0, 0] }, 124.4, 1.2);
+      ink(G.line(XA, Y - 90, XA, Y + 30), { sw: 5 }, 126.2, 0.3);
+      txt(XA, Y + 75, 'Alvo = 100%', { size: 34, w: 800, anchor: 'middle' }, 126.4, 0.6);
+      txt((XM + XA) / 2, Y - 100, 'aproximação do alvo', { size: 40, w: 800, color: C.blue, anchor: 'middle' }, 126.6, 1.2);
+      txt((XM + XA) / 2, Y + 150, 'ex.: alvo 100, realizado 90 → 90%', { size: 30, w: 600, color: C.soft, anchor: 'middle' }, 127.6, 1.2);
+      fill(G.rect(XA, Y - 60, XT - XA, 60, 8), '#A6E8DE', { off: [0, 0] }, 128.8, 0.6);
+      ink(G.line(XT, Y - 90, XT, Y + 30), { sw: 5 }, 129.4, 0.3);
+      txt(XT, Y + 75, 'Teto', { size: 34, w: 800, anchor: 'middle' }, 129.6, 0.4);
+      count((XA + XT) / 2, Y - 100, 100, 110, '%', { size: 64, color: '#1E9E8C', anchor: 'middle' }, 129.8, 1.0);
+      clear(132.1);
+
+      ilustra('golfe', {}, 132.4, 2.6);
+      txt(1360, 330, 'Metas de redução:', { size: 40, w: 700 }, 132.6, 0.8);
+      txt(1360, 395, 'custos · erros · acidentes', { size: 34, w: 600, color: C.soft }, 135.4, 1.2);
+      txt(1360, 510, 'Menor é melhor', { size: 62, w: 900, color: C.blue }, 138.7, 0.9);
+      sublinha(1360, 1800, 535, C.green, 139.8);
+      txt(1360, 640, 'Como no golfe: menos', { size: 38, w: 700 }, 143.9, 0.8);
+      txt(1360, 690, 'tacadas, melhor nota.', { size: 38, w: 700 }, 144.7, 0.8);
+      txt(1360, 800, 'Acidentes: zero é o troféu', { size: 36, w: 800, color: C.dark }, 147.6, 1.1);
+      clear(158.7);
+
+      // exemplo A–D
+      txt(130, 120, 'EXEMPLO PRÁTICO', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 159.0, 0.5);
+      txt(130, 195, 'Somando a nota de metas', { size: 64, w: 800 }, 159.3, 1.2);
+      sublinha(132, 880, 222, C.green, 160.6);
+      const cx = [300, 640, 1030, 1430], Y0 = 320, DY = 100;
+      ['Meta', 'Peso', 'Atingimento', 'Pontos'].forEach((h, i) => txt(cx[i], Y0, h, { size: 34, w: 800, color: C.soft, anchor: 'middle', nopen: true }, 161.4 + i * 0.25, 0.3));
+      ink(`M180,${Y0 + 25} L1560,${Y0 + 25}`, { sw: 4 }, 162.4, 0.5);
+      const linhas = [['A', '30', '100%', 30, 163.48], ['B', '30', '110%', 33, 169.96], ['C', '20', '80%', 16, 178.16], ['D', '20', '90%', 18, 185.02]];
+      linhas.forEach(([m, p, at, pts, t], k) => {
+        const y = Y0 + DY * (k + 1);
+        txt(cx[0], y, m, { size: 48, w: 900, color: C.dark, anchor: 'middle' }, t, 0.3);
+        txt(cx[1], y, p, { size: 46, w: 700, anchor: 'middle' }, t + 1.6, 0.3);
+        txt(cx[2], y, at, { size: 46, w: 700, anchor: 'middle', color: at === '110%' ? '#1E9E8C' : C.ink }, t + (m === 'B' ? 2.8 : 2.4), 0.4);
+        count(cx[3], y, 0, pts, '', { size: 52, w: 900, color: C.blue, anchor: 'middle' }, t + (m === 'B' ? 5.3 : m === 'C' ? 4.8 : 3.6), 0.6);
+      });
+      txt(cx[2] + 140, Y0 + DY * 2 + 6, 'teto!', { size: 28, w: 800, color: '#1E9E8C' }, 174.0, 0.3);
+      ink(`M180,${Y0 + DY * 4 + 45} L1560,${Y0 + DY * 4 + 45}`, { sw: 4 }, 190.2, 0.5);
+      txt(cx[2], Y0 + DY * 5 + 10, '30 + 33 + 16 + 18 =', { size: 42, w: 700, anchor: 'middle' }, 191.4, 2.4);
+      count(cx[3], Y0 + DY * 5 + 18, 0, 97, '%', { size: 84, w: 900, color: C.blue, anchor: 'middle' }, 194.4, 1.2);
+      circula(cx[3], Y0 + DY * 5 - 10, 130, 70, 196.8, { color: C.green });
+      txt(1680, Y0 + DY * 5, '= o quê', { size: 40, w: 800, color: C.dark }, 201.0, 0.6);
+    },
+  },
+
+  // ---------------- CENA 6: competências, a nova escala de 0 a 10 ----------------
+  {
+    id: 'competencias', start: 202.4, end: 277.0,
+    desenho(s) {
+      const { txt, ink, fill, shape, count, sublinha, circula, seta, clear, ilustra, G, C } = s;
+      txt(130, 120, 'O COMO · 30% DA NOTA', { size: 26, w: 800, color: C.green, ls: 5, nopen: true }, 202.6, 0.5);
+      txt(130, 195, 'Competências: nova escala', { size: 64, w: 800 }, 205.6, 1.3);
+      sublinha(132, 930, 222, C.green, 207.0);
+      txt(330, 330, 'ANTES', { size: 34, w: 900, color: C.soft, anchor: 'middle', ls: 4 }, 208.6, 0.4);
+      const antes = [['Nunca', 210.0], ['Raramente', 210.9], ['Às vezes', 211.9], ['Frequentemente', 213.6], ['Supera as expectativas', 214.8]];
+      antes.forEach(([w, t], k) => {
+        shape(G.rect(130, 370 + k * 95, 400, 70, 35), C.gray, { sw: 3, nopen: true }, t, 0.3);
+        txt(330, 418 + k * 95, w, { size: w.length > 15 ? 26 : 32, w: 700, anchor: 'middle', nopen: true }, t + 0.15, 0.3);
+      });
+      ink(G.cross(330, 600, 6.2), { color: C.red, sw: 9 }, 221.0, 0.7);
+      txt(330, 900, 'muita subjetividade', { size: 30, w: 700, color: C.red, anchor: 'middle' }, 221.8, 0.8);
+      seta(620, 600, 860, 600, 217.6, { bend: -0.1, sw: 6 });
+      txt(1300, 330, 'AGORA', { size: 34, w: 900, color: C.blue, anchor: 'middle', ls: 4 }, 218.2, 0.4);
+      txt(1300, 560, '0 a 10', { size: 180, w: 900, color: C.blue, anchor: 'middle' }, 219.2, 1.2);
+      txt(1300, 680, 'análise mais clara e objetiva', { size: 36, w: 700, anchor: 'middle' }, 229.5, 1.2);
+      clear(235.9);
+
+      // a régua de 0 a 10 com 6 faixas
+      txt(130, 150, 'A nova escala: 6 faixas', { size: 56, w: 800 }, 236.3, 1.0);
+      const X = v => 160 + v * 150, Y = 330;
+      const faixas = [
+        [0, 3, '#F4B6B3', '0 a 2', 'Muito abaixo do esperado', 238.7],
+        [3, 5, '#F7D2A8', '3 a 4', 'Abaixo do esperado', 242.4],
+        [5, 7, '#FFE9A8', '5 a 6', 'Atende parcialmente', 244.7],
+        [7, 9, '#A6E8DE', '7 a 8', 'Atende ao esperado', 251.8],
+        [9, 10, '#BFC8FA', '9', 'Acima do esperado', 264.2],
+        [10, 11, '#8C9BEF', '10', 'Referência', 266.1],
+      ];
+      ink(`M${X(0)},${Y + 40} L${X(11)},${Y + 40}`, { sw: 5 }, 236.2, 0.8);
+      faixas.forEach(([a, b, cor, num, nome, t], k) => {
+        shape(G.rect(X(a) + 4, Y - 40, X(b) - X(a) - 8, 80, 14), cor, { sw: 4, nopen: true }, t, 0.4);
+        txt((X(a) + X(b)) / 2, Y + 14, num, { size: 40, w: 900, anchor: 'middle', nopen: true }, t + 0.2, 0.3);
+        const yl = k % 2 ? Y - 70 : Y + 100;
+        txt((X(a) + X(b)) / 2, yl, nome, { size: num === '7 a 8' ? 30 : 26, w: num === '7 a 8' ? 900 : 700, color: num === '7 a 8' ? '#1E9E8C' : C.ink, anchor: 'middle' }, t + 0.5, 0.7);
+      });
+      // 7 ou 8 não é nota baixa
+      ilustra('corda-bamba', { tf: 'translate(60,470) scale(0.46)' }, 255.0, 2.2);
+      txt(1060, 640, '7 ou 8 NÃO é nota baixa:', { size: 46, w: 900, color: C.dark }, 251.8, 1.2);
+      txt(1060, 705, 'é exatamente o esperado.', { size: 46, w: 900, color: '#1E9E8C' }, 253.2, 1.1);
+      sublinha(1060, 1640, 728, C.green, 255.7);
+      circula((X(7) + X(9)) / 2, Y, 170, 70, 252.6, { color: C.green });
+      // justificativa
+      txt(1060, 830, 'Notas 0 a 2 e nota 10 exigem', { size: 36, w: 700 }, 270.6, 1.0);
+      txt(1060, 880, 'justificativa obrigatória', { size: 40, w: 900, color: C.red }, 272.3, 0.9);
+      circula(X(1.5), Y, 250, 62, 272.6, { color: C.red, d: 0.6 });
+      circula(X(10.5), Y, 95, 62, 273.3, { color: C.red, d: 0.5 });
     },
   },
 ];
