@@ -18,9 +18,10 @@
 - `assets/audio/narracao.m4a`: a narração (áudio do NotebookLM já editado).
 
 ## Situação
-- Pronto: cenas 1 a 3 (0:00 a 1:33): gancho da vistoria, abertura com logo, linha do tempo e rosca 70/20/10.
-- Próximo: cenas 4 a 9 (1:33 a 6:47).
-- O render de 1:33 leva uns 14 minutos na nuvem. No seu computador costuma ser mais rápido.
+- Vídeo completo (7:26), cenas 1 a 9. Ilustrações geradas no Gemini, preparadas por `build/ilustracoes.py`.
+- Renderizar só um trecho: `CENAS=mutirao,atingimento node build/build.mjs` e depois `npm run render`.
+  Rode `node build/build.mjs` sem CENAS para voltar ao vídeo inteiro.
+- Juntar partes renderizadas: concat do ffmpeg com `-c copy` e a narração `assets/audio/narracao.m4a` por cima.
 
 ## Com o Claude Code
 Abra o Claude Code nesta pasta e peça, por exemplo:

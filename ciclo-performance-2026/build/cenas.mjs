@@ -299,4 +299,127 @@ export const CENAS = [
       circula(X(10.5), Y, 95, 62, 273.3, { color: C.red, d: 0.5 });
     },
   },
+  // ---------------- CENA 7: quem avalia (competências e cultura) ----------------
+  {
+    id: 'quem-avalia', start: 277.0, end: 333.1,
+    desenho(s) {
+      const { txt, ink, fill, shape, count, sublinha, circula, seta, clear, ilustra, pessoa, G, C } = s;
+      txt(130, 120, 'QUEM AVALIA', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 277.2, 0.4);
+      txt(130, 195, 'Competências: quem dá a nota', { size: 60, w: 800 }, 277.5, 1.3);
+      sublinha(132, 990, 222, C.green, 278.9);
+      ilustra('gestora', { tf: 'translate(20,250) scale(0.75)' }, 279.2, 2.6);
+      txt(1180, 420, 'Autoavaliação', { size: 46, w: 800 }, 283.6, 0.7);
+      txt(1780, 420, '0%', { size: 64, w: 900, color: C.red, anchor: 'end' }, 284.6, 0.4);
+      txt(1180, 470, 'não entra no cálculo', { size: 32, w: 600, color: C.soft }, 285.0, 0.7);
+      txt(1180, 540, 'serve para reflexão e', { size: 32, w: 600, color: C.soft }, 290.0, 0.8);
+      txt(1180, 582, 'preparar o feedback', { size: 32, w: 600, color: C.soft }, 290.9, 0.8);
+      ink('M1170,640 L1800,640', { sw: 3, color: C.soft }, 299.0, 0.4);
+      txt(1180, 740, 'Gestor direto', { size: 50, w: 900, color: C.dark }, 299.5, 0.8);
+      count(1780, 740, 0, 100, '%', { size: 72, color: C.blue, anchor: 'end' }, 300.6, 1.2);
+      sublinha(1180, 1800, 768, C.green, 302.0);
+      clear(306.6);
+
+      txt(130, 120, 'QUEM AVALIA', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 306.9, 0.4);
+      txt(130, 195, 'Cultura: a dinâmica muda', { size: 60, w: 800 }, 307.1, 1.2);
+      sublinha(132, 870, 222, C.green, 308.4);
+      const X0 = 200, X1 = 1720, XM = X0 + (X1 - X0) * 0.7;
+      shape(G.rect(X0, 330, XM - X0, 110, 16), C.blue, { sw: 5 }, 309.4, 0.8);
+      txt((X0 + XM) / 2, 404, 'Gestor 70%', { size: 50, w: 900, color: C.white, anchor: 'middle', nopen: true }, 310.0, 0.6);
+      shape(G.rect(XM + 10, 330, X1 - XM - 10, 110, 16), C.green, { sw: 5 }, 311.3, 0.6);
+      txt((XM + X1) / 2 + 5, 404, '30%', { size: 50, w: 900, color: C.ink, anchor: 'middle', nopen: true }, 311.8, 0.4);
+      txt((XM + X1) / 2 + 5, 500, 'média de 2 clientes internos', { size: 30, w: 700, anchor: 'middle' }, 312.4, 1.0);
+      txt(960, 600, 'Quem indica os clientes internos?', { size: 40, w: 800, anchor: 'middle' }, 315.0, 1.2);
+      pessoa(620, 820, C.blue, 318.4, 0.8);
+      txt(620, 935, '1 indicado pelo profissional', { size: 30, w: 700, anchor: 'middle' }, 320.0, 1.0);
+      pessoa(1300, 820, C.green, 320.6, 0.8);
+      txt(1300, 935, '1 indicado pelo gestor', { size: 30, w: 700, anchor: 'middle' }, 321.4, 0.9);
+      clear(326.5);
+
+      ilustra('sigilo', { tf: 'translate(20,170) scale(0.78)' }, 326.6, 2.4);
+      txt(1240, 420, 'Notas dos clientes', { size: 48, w: 800 }, 327.6, 0.9);
+      txt(1240, 490, 'internos são', { size: 48, w: 800 }, 328.6, 0.6);
+      txt(1240, 575, 'confidenciais', { size: 66, w: 900, color: C.blue }, 329.3, 0.8);
+      sublinha(1240, 1700, 600, C.green, 330.2);
+      txt(1240, 700, 'Ninguém vê quem deu o quê.', { size: 36, w: 700, color: C.soft }, 331.1, 1.0);
+    },
+  },
+
+  // ---------------- CENA 8: juntando tudo (92,6%) ----------------
+  {
+    id: 'conta-final', start: 333.1, end: 389.6,
+    desenho(s) {
+      const { txt, ink, fill, shape, count, sublinha, circula, seta, clear, G, C } = s;
+      txt(130, 120, 'JUNTANDO TUDO', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 333.3, 0.4);
+      txt(130, 195, 'A nota final, na prática', { size: 60, w: 800 }, 333.6, 1.2);
+      sublinha(132, 820, 222, C.green, 335.0);
+      const L = 160, V = 900, P = 1180, R = 1560, Y = [350, 500, 650];
+      // metas
+      shape(G.rect(L - 30, Y[0] - 62, 60, 80, 12), C.blue, { sw: 3, nopen: true }, 342.6, 0.3);
+      txt(L + 50, Y[0], 'Metas', { size: 50, w: 900 }, 342.8, 0.5);
+      count(V, Y[0], 0, 97, '%', { size: 58, w: 900, color: C.ink, anchor: 'end' }, 345.6, 0.8);
+      txt(P, Y[0], '× 70%', { size: 50, w: 700, color: C.soft, anchor: 'end' }, 347.2, 0.5);
+      txt(P + 60, Y[0], '=', { size: 50, w: 700, color: C.soft }, 348.6, 0.2);
+      count(R, Y[0], 0, 67.9, '', { size: 64, w: 900, color: C.blue, anchor: 'end', dec: 1 }, 349.2, 1.2);
+      // competências
+      shape(G.rect(L - 30, Y[1] - 62, 60, 80, 12), C.green, { sw: 3, nopen: true }, 355.4, 0.3);
+      txt(L + 50, Y[1], 'Competências', { size: 50, w: 900 }, 355.6, 0.6);
+      txt(L + 50, Y[1] + 50, 'nota 8 do gestor = 80%', { size: 28, w: 600, color: C.soft }, 357.6, 1.0);
+      count(V, Y[1], 0, 80, '%', { size: 58, w: 900, color: C.ink, anchor: 'end' }, 358.4, 0.8);
+      txt(P, Y[1], '× 20%', { size: 50, w: 700, color: C.soft, anchor: 'end' }, 360.4, 0.5);
+      txt(P + 60, Y[1], '=', { size: 50, w: 700, color: C.soft }, 361.8, 0.2);
+      count(R, Y[1], 0, 16, '', { size: 64, w: 900, color: '#1E9E8C', anchor: 'end' }, 362.2, 1.0);
+      // cultura
+      shape(G.rect(L - 30, Y[2] - 62, 60, 80, 12), C.dark, { sw: 3, nopen: true }, 364.8, 0.3);
+      txt(L + 50, Y[2], 'Cultura', { size: 50, w: 900 }, 365.0, 0.5);
+      txt(L + 50, Y[2] + 50, 'gestor 9 × 70% + clientes internos 8 × 30%', { size: 28, w: 600, color: C.soft }, 367.4, 2.6);
+      count(V, Y[2], 0, 87, '%', { size: 58, w: 900, color: C.ink, anchor: 'end' }, 372.0, 0.8);
+      txt(P, Y[2], '× 10%', { size: 50, w: 700, color: C.soft, anchor: 'end' }, 374.6, 0.5);
+      txt(P + 60, Y[2], '=', { size: 50, w: 700, color: C.soft }, 376.4, 0.2);
+      count(R, Y[2], 0, 8.7, '', { size: 64, w: 900, color: C.dark, anchor: 'end', dec: 1 }, 376.8, 1.0);
+      // soma
+      ink(`M${L - 40},${Y[2] + 100} L${R + 60},${Y[2] + 100}`, { sw: 5 }, 378.9, 0.6);
+      txt(L + 50, Y[2] + 210, 'Nota final', { size: 58, w: 900 }, 379.6, 0.6);
+      txt(P + 60, Y[2] + 200, '67,9 + 16 + 8,7 =', { size: 34, w: 600, color: C.soft, anchor: 'end' }, 380.0, 2.2);
+      count(R + 40, Y[2] + 215, 0, 92.6, '%', { size: 96, w: 900, color: C.blue, anchor: 'end', dec: 1 }, 385.0, 1.6);
+      circula(R - 120, Y[2] + 180, 230, 85, 387.0, { color: C.green, d: 0.8 });
+    },
+  },
+
+  // ---------------- CENA 9: o recado, o feedback e o fechamento ----------------
+  {
+    id: 'fechamento', start: 389.6, end: 446.2,
+    desenho(s) {
+      const { txt, ink, fill, shape, count, sublinha, circula, seta, clear, ilustra, img, G, C } = s;
+      txt(960, 260, 'O recado', { size: 34, w: 900, color: C.soft, anchor: 'middle', ls: 6 }, 389.8, 0.5);
+      txt(960, 400, 'Gênio nas metas', { size: 70, w: 900, color: C.blue, anchor: 'middle' }, 392.4, 1.0);
+      txt(960, 500, '+ trator com os colegas', { size: 60, w: 900, color: C.red, anchor: 'middle' }, 395.2, 1.2);
+      ink(G.arrow(960, 545, 960, 640, 0, 22), { sw: 6 }, 398.4, 0.4);
+      txt(960, 740, 'competências e cultura derrubam a nota', { size: 46, w: 800, anchor: 'middle' }, 398.8, 1.8);
+      sublinha(560, 1360, 765, C.green, 400.8);
+      clear(402.8);
+
+      ilustra('feedback', { tf: 'translate(20,160) scale(0.78)' }, 403.0, 2.6);
+      txt(1240, 380, 'Feedback', { size: 70, w: 900, color: C.blue }, 408.3, 0.7);
+      txt(1240, 450, 'presencial, com o gestor', { size: 40, w: 800 }, 409.2, 1.1);
+      sublinha(1240, 1820, 475, C.green, 410.5);
+      txt(1240, 560, 'Não é só conferir um número:', { size: 32, w: 600, color: C.soft }, 410.8, 1.0);
+      txt(1240, 605, 'é alinhar rotas.', { size: 40, w: 800, color: C.dark }, 413.0, 0.8);
+      txt(1240, 710, 'Registro obrigatório no sistema,', { size: 32, w: 700 }, 415.7, 1.1);
+      txt(1240, 755, 'em etapa própria da avaliação final', { size: 32, w: 700 }, 419.4, 1.4);
+      clear(422.0);
+
+      txt(960, 330, 'Dúvidas sobre o ciclo?', { size: 54, w: 800, anchor: 'middle' }, 422.3, 1.2);
+      const ex = 600, ey = 430;
+      ink([G.rect(ex, ey, 140, 96, 10), `M${ex},${ey} L${ex + 70},${ey + 52} L${ex + 140},${ey}`], { sw: 5, color: C.blue }, 425.6, 0.7);
+      txt(780, 500, 'remuneracao.rh@cury.net', { size: 62, w: 900, color: C.blue }, 426.5, 2.2);
+      sublinha(780, 1560, 528, C.green, 429.0);
+      clear(435.6);
+
+      ilustra('vistoria', { tf: 'translate(20,120) scale(0.8)' }, 435.8, 2.4);
+      txt(1180, 450, 'Se a vistoria', { size: 60, w: 800 }, 441.8, 0.7);
+      txt(1180, 530, 'fosse hoje,', { size: 60, w: 800 }, 442.5, 0.6);
+      txt(1180, 640, 'o seu prédio passaria?', { size: 54, w: 900, color: C.blue }, 443.2, 1.2);
+      sublinha(1180, 1800, 665, C.green, 444.5, { d: 0.4 });
+    },
+  },
 ];
