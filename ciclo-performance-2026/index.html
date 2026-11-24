@@ -8,12 +8,19 @@
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #FCFCFC; }
       #main { position: relative; width: 100%; height: 100%; }
+      #papel { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+      #marca { position: absolute; right: 64px; top: 48px; width: 150px; opacity: .9; }
     </style>
   </head>
   <body>
-    <div id="main" data-composition-id="main" data-start="0" data-duration="33.8" data-width="1920" data-height="1080">
-      <div id="planta" data-composition-id="planta" data-composition-src="compositions/planta.html" data-start="0" data-duration="33.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
-      <audio id="narracao" src="assets/audio/narracao.m4a" data-start="0" data-duration="33.8" data-media-start="59" data-volume="1" data-track-index="2"></audio>
+    <div id="main" data-composition-id="main" data-start="0" data-duration="92.8" data-width="1920" data-height="1080">
+      <img id="papel" class="clip" src="assets/brand/papel.jpg" alt="" data-start="0" data-duration="92.8" data-track-index="0" />
+      <div id="abertura" data-composition-id="abertura" data-composition-src="compositions/abertura.html" data-start="0" data-duration="28.9" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="linha-do-tempo" data-composition-id="linha-do-tempo" data-composition-src="compositions/linha-do-tempo.html" data-start="28.9" data-duration="30.1" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="planta-da-nota" data-composition-id="planta-da-nota" data-composition-src="compositions/planta-da-nota.html" data-start="59" data-duration="33.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <img id="marca" class="clip" src="assets/brand/logo-azul.svg" alt="Cury" data-start="16.5" data-duration="76.3" data-track-index="3" />
+      <div id="legendas" data-composition-id="legendas" data-composition-src="compositions/legendas.html" data-start="0" data-duration="92.8" data-track-index="4" data-width="1920" data-height="1080"></div>
+      <audio id="narracao" src="assets/audio/narracao.m4a" data-start="0" data-duration="92.8" data-media-start="0" data-volume="1" data-track-index="2"></audio>
     </div>
     <script>
       window.__timelines = window.__timelines || {};

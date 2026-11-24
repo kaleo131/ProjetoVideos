@@ -1,0 +1,45 @@
+<template>
+  <style>
+    @font-face { font-family: 'Figtree'; src: url('assets/fonts/figtree-latin.woff2') format('woff2'); font-weight: 300 900; }
+    @font-face { font-family: 'Figtree'; src: url('assets/fonts/figtree-latin-ext.woff2') format('woff2'); font-weight: 300 900; unicode-range: U+0100-024F; }
+    #legendas { position: absolute; inset: 0; pointer-events: none; }
+    #legendas .faixa { position: absolute; left: 50%; bottom: 52px; transform: translateX(-50%); max-width: 1300px;
+      font-family: 'Figtree', sans-serif; font-size: 38px; font-weight: 700; line-height: 1.2; color: #1B1F3B;
+      background: rgba(252,252,252,.92); border: 3px solid #1B1F3B; border-radius: 18px; padding: 12px 28px; white-space: nowrap;
+      box-shadow: 6px 6px 0 rgba(26,53,230,.18); }
+    #legendas .w { opacity: .35; }
+    #legendas .w.on { opacity: 1; }
+    #legendas .w.agora { color: #1A35E6; }
+  </style>
+  <div id="legendas" data-composition-id="legendas" data-width="1920" data-height="1080" data-layout-allow-overlap>
+    <div id="leg-faixa" class="faixa clip" data-start="0" data-duration="92.8"></div>
+  </div>
+  <script>
+    (function () {
+      const L = [{"s":0,"e":2.94,"w":[["Sabe",0],["qual",0.38],["é",0.72],["o",0.82],["momento",0.86],["mais",1.06],["tenso",1.36],["de",1.96],["uma",2.08],["obra?",2.22]]},{"s":2.94,"e":5.52,"w":[["Não",2.94],["é",3.16],["a",3.34],["fundação,",3.44],["tipo,",4.18],["nem",4.48],["a",4.58],["concretagem,",4.68]]},{"s":5.52,"e":7.22,"w":[["é",5.52],["a",5.94],["vistoria",6.02],["final.",6.36]]},{"s":7.22,"e":10.02,"w":[["Bom,",7.22],["bem-vindos",7.86],["a",8.48],["mais",8.64],["um",8.84],["mergulho",8.96],["profundo",9.28]]},{"s":10.02,"e":11.82,"w":[["no",10.02],["nosso",10.22],["conteúdo",10.5],["de",11],["hoje.",11.28]]},{"s":11.82,"e":13.24,"w":[["Eu",11.82],["sou",11.92],["a",12.1],["sua",12.2],["Anfitriã.",12.28]]},{"s":13.24,"e":14.76,"w":[["E",13.24],["eu",13.48],["sou",13.58],["especialista.",13.74]]},{"s":14.76,"e":16.7,"w":[["E",14.76],["olha,",14.82],["vamos",15.28],["ser",15.42],["honestos.",15.68]]},{"s":16.7,"e":18.74,"w":[["Dezembro",16.7],["é",17.12],["aquele",17.16],["mês",17.34],["em",17.6],["que",17.76],["o",17.84],["cansaço",17.98],["do",18.44],["ano",18.6]]},{"s":18.74,"e":20.58,"w":[["inteiro",18.74],["já",19.18],["bateu",19.38],["forte,",19.66],["né?",20.14]]},{"s":20.58,"e":22.44,"w":[["Nossa,",20.58],["bate",21.2],["e",21.48],["bate",21.62],["muito.",21.78]]},{"s":22.44,"e":24.9,"w":[["Exato.",22.44],["E",23.22],["de",23.32],["repente",23.5],["chega",23.84],["a",24.12],["lembrança",24.28],["de",24.64],["que",24.78]]},{"s":24.9,"e":27,"w":[["é",24.9],["preciso",25],["provar",25.2],["que",25.76],["o",25.9],["prédio",26],["construído",26.28],["nos",26.8]]},{"s":27,"e":28.52,"w":[["últimos",27],["meses",27.22],["não",27.7],["vai",28.16],["cair.",28.36]]},{"s":28.52,"e":29.64,"w":[["Pois",28.52],["é.",29.16]]},{"s":29.64,"e":32.26,"w":[["E",29.64],["essa",29.72],["vistoria",29.88],["já",30.3],["tem",30.48],["data",30.96],["marcada",30.98],["lá",31.36],["na",31.52],["Cury.",31.6]]},{"s":32.26,"e":34.64,"w":[["Entre",32.26],["1º",32.46],["de",32.86],["dezembro",32.94],["e",33.44],["8",33.64],["de",33.88],["janeiro",34.04],["a",34.42],["gente",34.52]]},{"s":34.64,"e":36.92,"w":[["tem",34.64],["a",34.88],["avaliação",34.98],["final",35.42],["do",35.84],["Ciclo",36.06],["de",36.38],["Performance",36.5]]},{"s":36.92,"e":38.54,"w":[["de",36.92],["2026.",37.2]]},{"s":38.54,"e":41.28,"w":[["E",38.54],["a",38.84],["base",39.4],["já",39.64],["foi",39.86],["levantada",40],["pelas",40.44],["equipes",40.74],["ao",41.12]]},{"s":41.28,"e":42.74,"w":[["longo",41.28],["do",41.5],["ano",41.66],["todo.",41.8]]},{"s":42.74,"e":44.98,"w":[["Tivemos",42.74],["o",43.1],["lançamento",43.18],["de",43.52],["metas,",43.7],["lá",44.28],["em",44.48],["fevereiro",44.6]]},{"s":44.98,"e":45.84,"w":[["e",44.98],["março.",45.1]]},{"s":45.84,"e":49.02,"w":[["Aí",45.84],["os",45.96],["acompanhamentos",46.06],["em",46.68],["abril,",46.88],["julho",47.58],["e",48.02],["outubro.",48.28]]},{"s":49.02,"e":50.38,"w":[["O",49.02],["PDI",49.14],["em",49.48],["maio,",49.74],["né?",50.16]]},{"s":50.38,"e":51.64,"w":[["Isso,",50.38],["o",50.8],["PDI",50.86],["em",51],["maio.",51.14]]},{"s":51.64,"e":53.74,"w":[["E",51.64],["agora,",51.74],["a",52.2],["indicação",52.26],["de",52.56],["clientes",52.76],["internos",53.08],["em",53.64]]},{"s":53.74,"e":56.48,"w":[["novembro.",53.74],["Ou",54.5],["seja,",54.66],["o",55.28],["prédio",55.38],["já",55.64],["está",55.98],["de",56.18],["pé.",56.32]]},{"s":56.48,"e":58.94,"w":[["Falta",56.48],["só",57.18],["a",57.46],["vistoria",57.62],["mesmo.",58.02]]},{"s":58.94,"e":61.44,"w":[["Bom,",58.94],["então,",59.34],["vamos",59.68],["desenhar",60.02],["a",60.56],["planta",60.7],["da",61.04],["nota",61.14]]},{"s":61.44,"e":63.82,"w":[["para",61.44],["entender",61.66],["como",61.96],["a",62.52],["Cury",62.7],["divide",62.9],["tudo",63.1],["isso.",63.36]]},{"s":63.82,"e":65.62,"w":[["Como",63.82],["fica",63.92],["o",64.1],["peso",64.22],["de",64.44],["cada",64.6],["pilar.",64.74]]},{"s":65.62,"e":67.62,"w":[["A",65.62],["lógica",65.78],["é",66.1],["separar",66.32],["muito",66.62],["bem",66.94],["o",67.2],["que",67.32],["eles",67.38],["se",67.5]]},{"s":67.62,"e":70.18,"w":[["chamam",67.62],["de",67.78],["o",67.98],["que",68.32],["do",68.58],["como.",69.2]]},{"s":70.18,"e":73.9,"w":[["Tipo,",70.18],["metas",70.88],["representam",71.32],["70%",71.96],["da",72.82],["nota",73.08],["final,",73.26]]},{"s":73.9,"e":75.82,"w":[["que",73.9],["é",74.18],["o",74.3],["que",74.38],["foi",74.46],["entregue",74.58],["na",74.92],["prática.",75.02]]},{"s":75.82,"e":77.24,"w":[["Certo,",75.82],["resultado",76.26],["final.",76.44]]},{"s":77.24,"e":80.64,"w":[["Exatamente.",77.24],["Já",78.2],["as",78.4],["competências",78.54],["valem",79.14],["20%",79.5],["e",80.12]]},{"s":80.64,"e":82.28,"w":[["cultura",80.64],["10%.",81.06]]},{"s":82.28,"e":85.22,"w":[["Esses",82.28],["dois",82.8],["avaliam",82.94],["o",83.32],["como",83.7],["o",84.2],["trabalho",84.42],["foi",84.68],["feito.",84.9]]},{"s":85.22,"e":87.7,"w":[["Medindo",85.22],["os",85.84],["comportamentos",86.02],["do",86.58],["dia",86.76],["a",86.96],["dia,",87.04],["sabe?",87.26]]},{"s":87.7,"e":91.46,"w":[["Mas",87.7],["poxa,",87.8],["70%",88.38],["nas",89.18],["metas",89.52],["ainda",89.88],["é",90.12],["um",90.32],["peso",90.34],["gigantesco.",90.54]]},{"s":91.46,"e":92.8,"w":[["Ah,",91.46],["com",91.76],["certeza",91.84],["é.",92.1]]}];
+      const el = document.getElementById('leg-faixa');
+      let atual = -2, spans = [];
+      function draw(t) {
+        let i = -1;
+        for (let k = 0; k < L.length; k++) if (t >= L[k].s && t < L[k].e) { i = k; break; }
+        if (i !== atual) {
+          atual = i;
+          if (i < 0) { el.style.visibility = 'hidden'; spans = []; return; }
+          el.style.visibility = 'visible';
+          el.innerHTML = L[i].w.map(w => '<span class="w">' + w[0] + '</span>').join(' ');
+          spans = Array.from(el.querySelectorAll('.w'));
+        }
+        if (i < 0) return;
+        const ws = L[i].w;
+        let ag = -1;
+        ws.forEach((w, k) => { const on = t >= w[1]; spans[k].classList.toggle('on', on); if (on) ag = k; });
+        spans.forEach((s, k) => s.classList.toggle('agora', k === ag));
+      }
+      const relogio = { t: 0 };
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo(relogio, { t: 0 }, { t: 92.8, duration: 92.8, ease: 'none', onUpdate: () => draw(relogio.t) }, 0);
+      draw(0);
+      window.__timelines['legendas'] = tl;
+    })();
+  </script>
+</template>
