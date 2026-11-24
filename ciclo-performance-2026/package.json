@@ -1,0 +1,14 @@
+{
+  "name": "ciclo-2026",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.9.86 preview",
+    "check": "npx --yes hyperframes@0.9.86 check",
+    "render": "npx --yes hyperframes@0.9.86 render",
+    "publish": "npx --yes hyperframes@0.9.86 publish"
+  },
+  "devDependencies": {
+    "roughjs": "^4.6.6"
+  }
+}
