@@ -95,65 +95,68 @@
  261.04  262.40 E, pelo contrário...
  262.40  263.32 Não é ruim, né?
  263.54  263.92 Não mesmo.
- 264.16  265.82 O 9 já é acima do esperado.
- 266.08  267.40 E o 10 é referência.
- 268.04  270.08 E, olha só, pra travar a subjetividade,
- 270.56  275.18 notas de 0 a 2 e a nota 10 exigem justificativa detalhada obrigatória.
- 275.64  276.64 Muito bem pensado.
- 277.16  278.66 Mas, mudando o assunto rapidinho,
- 278.98  282.00 deixar 100% do peso das competências na mão da chefia
- 282.00  283.30 na meio arriscado,
- 283.30  285.52 a auto-avaliação não conta no cálculo.
- 285.78  289.16 E esse é um ponto vital do design de ARH da Curie.
- 289.54  292.68 A auto-avaliação existe no ciclo e é crucial pra reflexão.
- 293.04  297.24 Mas não tem peso matemático, porque as réguas pessoais variam muito, sabe?
- 297.56  298.90 Distorceria a nota de todo mundo.
- 299.50  302.58 Ah, então, em competências, o gestor tem peso de 100%
- 302.58  305.66 e a auto-avaliação fica de fora do cálculo final.
- 305.90  306.32 Exato.
- 307.08  309.06 Mas, em cultura, a dinâmica muda.
- 309.36  311.18 O gestor vale 70%.
- 311.18  314.46 E os outros 30% vem da média de dois clientes internos.
- 314.92  318.02 Legal. E quem escolhe esses clientes internos?
- 318.42  319.66 São duas indicações.
- 319.96  322.58 Uma feita pelo próprio profissional e outra pelo gestor.
- 323.04  326.30 Uma avaliação bem completa, além do líder direto, então.
- 326.72  330.74 E vale reforçar que as notas desses clientes internos são confidenciais.
- 331.10  332.12 Ninguém vê quem deu o quê.
- 332.46  332.88 Com certeza.
- 333.26  336.20 Mas vamos materializar tudo isso pra quem tá acompanhando a gente
- 336.20  337.28 não se perder nas regras?
- 337.54  339.60 Como essa matemática funciona na vida real?
- 340.19  343.11 Imagine alguém que teve um desempenho espetacular em metas
- 343.11  344.65 e tirou 97%.
- 344.65  349.11 Como isso vale 70%, temos 67,9 pontos.
- 349.73  352.31 Certo. Anotei aqui. 67,9.
- 352.99  357.73 Aí, em competências, o gestor avaliou com nota 8, ou seja, 80%.
- 357.73  361.41 Multiplicando pelo peso de 20%, dá 16 pontos.
- 362.37  364.05 E em cultura?
- 364.81  368.91 Em cultura, o gestor deu 9, e os clientes internos deram 8.
- 369.45  375.93 A ponderação fecha em 87%, que vezes os 10% de peso resultem 8,7 pontos.
- 376.47  382.07 A soma final fica 67,9, mais 16, mais 8,7.
- 382.55  386.19 O que dá um total cravado de 92,6%.
- 386.19  386.85 Exatamente.
- 387.25  389.59 O recado nas entrelinhas é bem claro.
- 389.95  392.71 Se a pessoa for um gênio que bate todas as metas,
- 392.71  395.77 mas for um trator que diz respeito aos colegas o ano todo,
- 396.13  399.37 as notas de competências e cultura vão derrubar o resultado final.
- 399.55  400.09 Vão mesmo.
- 400.65  405.41 E quando essa conta toda se encerra, vem a etapa fundamental para o desenvolvimento,
- 405.85  408.11 o feedback presencial com o gestor.
- 408.33  410.35 Que não é só conferir um número na tela, né?
- 410.55  412.83 Jamais. É o momento de alinhar rotas.
- 413.25  416.57 E tudo isso precisa ser lançado obrigatoriamente no sistema,
- 416.93  418.85 numa etapa própria da avaliação final.
- 419.23  419.71 Perfeito.
- 419.71  423.75 Olha, para quem precisa resolver qualquer dúvida adicional sobre o ciclo da Curi,
- 424.05  429.17 o canal oficial é o e-mail remuneração.rharrobacuri.net.
- 429.55  431.99 O nosso mergulho profundo fica por aqui hoje.
- 432.13  432.59 Tem isso aí.
- 433.39  434.99 E fica a provocação de sempre, pessoal.
- 435.25  435.77 Bem lembrado.
- 436.19  438.93 Fechando exatamente com a reflexão que puxamos lá no início.
- 439.35  442.25 Se a vistoria fosse hoje, o seu prédio passaria?
- 442.85  443.31 Até a próxima.
+ 264.42  266.20 O nove já é acima do esperado.
+ 266.38  267.64 E o dez é a referência.
+ 268.02  270.40 E olha só, para travar a subjetividade,
+ 270.92  273.94 notas de zero a dois e também as notas nove e dez
+ 273.94  277.30 exigem justificativa detalhada obrigatória.
+ 277.60  278.60 Muito bem pensado.
+ 279.16  281.14 Ou seja, tanto as notas muito baixas
+ 281.14  283.74 quanto as mais altas precisam de justificativa.
+ 284.16  285.66 Mas, mudando o assunto rapidinho,
+ 285.98  289.00 deixar 100% do peso das competências na mão da chefia
+ 289.00  290.30 na meio arriscado,
+ 290.30  292.52 a auto-avaliação não conta no cálculo.
+ 292.78  296.16 E esse é um ponto vital do design de ARH da Curie.
+ 296.54  299.68 A auto-avaliação existe no ciclo e é crucial pra reflexão.
+ 300.04  304.24 Mas não tem peso matemático, porque as réguas pessoais variam muito, sabe?
+ 304.56  305.90 Distorceria a nota de todo mundo.
+ 306.50  309.58 Ah, então, em competências, o gestor tem peso de 100%
+ 309.58  312.66 e a auto-avaliação fica de fora do cálculo final.
+ 312.90  313.32 Exato.
+ 314.08  316.06 Mas, em cultura, a dinâmica muda.
+ 316.36  318.18 O gestor vale 70%.
+ 318.18  321.46 E os outros 30% vem da média de dois clientes internos.
+ 321.92  325.02 Legal. E quem escolhe esses clientes internos?
+ 325.42  326.66 São duas indicações.
+ 326.96  329.58 Uma feita pelo próprio profissional e outra pelo gestor.
+ 330.04  333.30 Uma avaliação bem completa, além do líder direto, então.
+ 333.72  337.74 E vale reforçar que as notas desses clientes internos são confidenciais.
+ 338.10  339.12 Ninguém vê quem deu o quê.
+ 339.46  339.88 Com certeza.
+ 340.26  343.20 Mas vamos materializar tudo isso pra quem tá acompanhando a gente
+ 343.20  344.28 não se perder nas regras?
+ 344.54  346.60 Como essa matemática funciona na vida real?
+ 347.19  350.11 Imagine alguém que teve um desempenho espetacular em metas
+ 350.11  351.65 e tirou 97%.
+ 351.65  356.11 Como isso vale 70%, temos 67,9 pontos.
+ 356.73  359.31 Certo. Anotei aqui. 67,9.
+ 359.99  364.73 Aí, em competências, o gestor avaliou com nota 8, ou seja, 80%.
+ 364.73  368.41 Multiplicando pelo peso de 20%, dá 16 pontos.
+ 369.37  371.05 E em cultura?
+ 371.81  375.91 Em cultura, o gestor deu 9, e os clientes internos deram 8.
+ 376.45  382.93 A ponderação fecha em 87%, que vezes os 10% de peso resultem 8,7 pontos.
+ 383.47  389.07 A soma final fica 67,9, mais 16, mais 8,7.
+ 389.55  393.19 O que dá um total cravado de 92,6%.
+ 393.19  393.85 Exatamente.
+ 394.25  396.59 O recado nas entrelinhas é bem claro.
+ 396.95  399.71 Se a pessoa for um gênio que bate todas as metas,
+ 399.71  402.77 mas for um trator que diz respeito aos colegas o ano todo,
+ 403.13  406.37 as notas de competências e cultura vão derrubar o resultado final.
+ 406.55  407.09 Vão mesmo.
+ 407.65  412.41 E quando essa conta toda se encerra, vem a etapa fundamental para o desenvolvimento,
+ 412.85  415.11 o feedback presencial com o gestor.
+ 415.33  417.35 Que não é só conferir um número na tela, né?
+ 417.55  419.83 Jamais. É o momento de alinhar rotas.
+ 420.25  423.57 E tudo isso precisa ser lançado obrigatoriamente no sistema,
+ 423.93  425.85 numa etapa própria da avaliação final.
+ 426.23  426.71 Perfeito.
+ 426.71  430.75 Olha, para quem precisa resolver qualquer dúvida adicional sobre o ciclo da Curi,
+ 431.05  436.17 o canal oficial é o e-mail remuneração.rharrobacuri.net.
+ 436.55  438.99 O nosso mergulho profundo fica por aqui hoje.
+ 439.13  439.59 Tem isso aí.
+ 440.39  441.99 E fica a provocação de sempre, pessoal.
+ 442.25  442.77 Bem lembrado.
+ 443.19  445.93 Fechando exatamente com a reflexão que puxamos lá no início.
+ 446.35  449.25 Se a vistoria fosse hoje, o seu prédio passaria?
+ 449.85  450.31 Até a próxima.
