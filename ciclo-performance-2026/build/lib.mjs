@@ -11,6 +11,8 @@ export const C = {
   blue: '#1A35E6', dark: '#082381', green: '#30C7B2', gray: '#E7EAF0', white: '#FCFCFC',
   ink: '#1B1F3B', soft: '#4A5578', skin: '#F3D2B5', red: '#D9534F', yellow: '#FFD873',
 };
+import fs from 'node:fs';
+const CAIXAS = fs.existsSync('assets/ilustracoes/caixas.json') ? JSON.parse(fs.readFileSync('assets/ilustracoes/caixas.json', 'utf8')) : {};
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const r2 = n => Math.round(n * 100) / 100;
 
@@ -93,6 +95,28 @@ export function makeScene(id, start, dur) {
     // imagem (logo etc.) com entrada suave
     img(href, x, y, w, h, o = {}, t = 0, du = 0.8) {
       layers.img.push(`<g ${attrs('img', t, du, { ...o, nopen: true })}><image href="${href}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid meet"/></g>`);
+    },
+    // ilustração do Gemini: a caneta desenha o traço (varrendo em zigue-zague) e depois a cor é pintada por cima.
+    // nome = arquivo em assets/ilustracoes (nome-traco.png e nome-cor.png, com fundo transparente). t/dt = traço; o.tc/o.dc = cor.
+    ilustra(nome, o = {}, t = 0, dt = 3) {
+      const [x0, y0, x1, y1] = o.box || CAIXAS[nome] || [0, 0, 1920, 1080];
+      const zig = (rows) => {
+        const h = (y1 - y0) / rows; let d = '';
+        for (let r = 0; r < rows; r++) {
+          const y = r2(y0 + h * (r + 0.5)), a = r % 2 ? x1 : x0, b = r % 2 ? x0 : x1;
+          d += (r ? ` L${a},${y}` : `M${a},${y}`) + ` L${b},${r2(y + h * 0.15)}`;
+        }
+        return { d, w: r2(h * 1.6) };
+      };
+      const rT = o.rows || Math.max(4, Math.round((y1 - y0) / 120)), zt = zig(rT), zc = zig(Math.max(3, Math.round(rT / 2)));
+      const tc = o.tc ?? t + dt * 0.85, dc = o.dc || 1.4;
+      const id = `${P}il${n}`;
+      layers.img.push(`<g ${attrs('ilus', t, dt, o)} data-t2="${T(tc)}" data-d2="${r2(dc)}">
+        <mask id="${id}t" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="1080"><path class="stk" pathLength="1" d="${zt.d}" stroke="#fff" stroke-width="${zt.w}" fill="none" stroke-linecap="round" stroke-linejoin="round"/></mask>
+        <mask id="${id}c" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="1080"><path class="mc" pathLength="1" d="${zc.d}" stroke="#fff" stroke-width="${zc.w}" fill="none" stroke-linecap="round" stroke-linejoin="round"/></mask>
+        <image class="tr" href="assets/ilustracoes/${nome}-traco.png" x="0" y="0" width="1920" height="1080" mask="url(#${id}t)"/>
+        <image class="co" href="assets/ilustracoes/${nome}-cor.png" x="0" y="0" width="1920" height="1080" mask="url(#${id}c)"/>
+      </g>`);
     },
     // apaga do quadro tudo o que já foi desenhado e ainda está visível
     clear(t) {
@@ -180,11 +204,13 @@ function sceneHtml(id, dur, L) {
         stk: Array.from(e.querySelectorAll('.stk')),
         from: +e.dataset.from, to: +e.dataset.to, suf: e.dataset.suf || '', dec: +(e.dataset.dec || 0),
         tf: e.getAttribute('transform') || '',
+        t2: +(e.dataset.t2 || 0), d2: +(e.dataset.d2 || 1),
+        mc: e.querySelector('.mc'), tr: e.querySelector('.tr'),
       }));
       const clamp = x => (x < 0 ? 0 : x > 1 ? 1 : x);
       const ease = x => (1 - Math.cos(Math.PI * clamp(x))) / 2;
       const easeOut = x => 1 - Math.pow(1 - clamp(x), 3);
-      els.forEach(it => { it.stk.forEach(s => { s.style.strokeDasharray = '1 1.02'; }); });
+      els.forEach(it => { it.stk.forEach(s => { s.style.strokeDasharray = '1 1.02'; }); if (it.mc) it.mc.style.strokeDasharray = '1 1.02'; });
       // medidas feitas uma vez (e refeitas quando a fonte carrega), antes de qualquer quadro
       function medir() {
         els.forEach(it => {
@@ -207,7 +233,14 @@ function sceneHtml(id, dur, L) {
           if (o <= 0) continue;
           let sc = 1;
           for (const pt of it.pulse) { const q = (t - pt) / 0.7; if (q > 0 && q < 1) sc = 1 + 0.08 * Math.sin(Math.PI * q); }
-          if (it.kind === 'stroke') {
+          if (it.kind === 'ilus') {
+            const s = it.stk[0];
+            s.style.strokeDashoffset = 1 - p;
+            if (p > 0 && p < 1 && t < it.out) penAt = ptAt(it.pts[0], p);
+            const q2 = clamp((t - it.t2) / it.d2);
+            it.mc.style.strokeDashoffset = 1 - q2;
+            it.tr.style.opacity = 1 - 0.75 * clamp((q2 - 0.5) / 0.5);
+          } else if (it.kind === 'stroke') {
             const n = it.stk.length;
             it.stk.forEach((s, i) => {
               const q = clamp((p - i / n) * n);
@@ -230,7 +263,7 @@ function sceneHtml(id, dur, L) {
             sc *= 0.92 + 0.08 * easeOut(p);
             it.e.style.opacity = o * easeOut(p);
           }
-          if (sc !== 1 || it.kind === 'img') it.e.setAttribute('transform', it.tf + ' translate(' + it.cx + ',' + it.cy + ') scale(' + sc + ') translate(' + (-it.cx) + ',' + (-it.cy) + ')');
+          if (it.kind === 'ilus') {} else if (sc !== 1 || it.kind === 'img') it.e.setAttribute('transform', it.tf + ' translate(' + it.cx + ',' + it.cy + ') scale(' + sc + ') translate(' + (-it.cx) + ',' + (-it.cy) + ')');
           else if (it.pulse.length) it.e.setAttribute('transform', it.tf);
         }
         if (penAt) { pen.setAttribute('opacity', 1); pen.setAttribute('transform', 'translate(' + penAt.x + ',' + penAt.y + ')'); }

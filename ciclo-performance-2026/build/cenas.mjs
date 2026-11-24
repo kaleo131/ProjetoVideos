@@ -9,20 +9,16 @@ export const CENAS = [
     id: 'abertura', start: 0, end: 28.9,
     desenho(s) {
       const { txt, ink, shape, predio, chao, seta, sublinha, circula, clear, img, pessoa, fill, G, C } = s;
-      txt(960, 170, 'Qual é o momento mais tenso de uma obra?', { size: 64, w: 800, anchor: 'middle' }, 0.1, 1.8);
-      chao(260, 1010, 820, 0.9);
-      predio(440, 820, 270, 470, 1.2);
-      // guindaste simples
-      ink(['M820,820 L820,300', 'M760,300 L1060,300', 'M820,360 L870,300', 'M1030,300 L1030,380'], { sw: 4.5 }, 2.2, 0.8);
-      // lista de verificação
-      const L = 1170;
-      txt(L + 70, 470, 'Fundação', { size: 46, w: 700, color: C.soft }, 3.44, 0.5);
-      ink(G.cross(L + 20, 455, 0.9), { color: C.red, sw: 6, nopen: true }, 4.0, 0.3);
-      txt(L + 70, 580, 'Concretagem', { size: 46, w: 700, color: C.soft }, 4.68, 0.6);
-      ink(G.cross(L + 20, 565, 0.9), { color: C.red, sw: 6, nopen: true }, 5.25, 0.3);
-      txt(L + 70, 700, 'Vistoria final', { size: 58, w: 900, color: C.blue }, 5.94, 0.6);
-      ink(G.check(L + 20, 682, 1.1), { color: C.green, sw: 8 }, 6.4, 0.35);
-      sublinha(L + 66, L + 450, 722, C.green, 6.6);
+      const { ilustra } = s;
+      txt(960, 150, 'Qual é o momento mais tenso de uma obra?', { size: 60, w: 800, anchor: 'middle' }, 0.1, 1.8);
+      ilustra('obra', {}, 0.4, 2.6);
+      txt(290, 905, 'Fundação', { size: 40, w: 700, color: C.soft, anchor: 'middle' }, 3.44, 0.5);
+      ink(G.cross(150, 892, 0.75), { color: C.red, sw: 6, nopen: true }, 4.0, 0.3);
+      txt(760, 905, 'Concretagem', { size: 40, w: 700, color: C.soft, anchor: 'middle' }, 4.68, 0.6);
+      ink(G.cross(590, 892, 0.75), { color: C.red, sw: 6, nopen: true }, 5.25, 0.3);
+      txt(1660, 905, 'Vistoria final', { size: 50, w: 900, color: C.blue, anchor: 'middle' }, 5.94, 0.6);
+      ink(G.check(1470, 890, 1.0), { color: C.green, sw: 8 }, 6.4, 0.35);
+      sublinha(1500, 1820, 925, C.green, 6.6);
       clear(7.1);
 
       // logo + título
@@ -37,30 +33,22 @@ export const CENAS = [
       clear(16.5);
 
       // dezembro e o cansaço
-      const cx = 280, cy = 280, cw = 540, ch = 470;
-      shape(G.rect(cx, cy, cw, ch, 18), C.white, { sw: 5 }, 16.7, 0.9);
-      fill(G.rect(cx, cy, cw, 110, 18), C.blue, { off: [0, 0] }, 17.1, 0.4);
-      txt(cx + cw / 2, cy + 75, 'DEZEMBRO', { size: 54, w: 900, color: C.white, anchor: 'middle', nopen: true }, 17.3, 0.5);
-      for (let r = 0; r < 4; r++) for (let c = 0; c < 7; c++) {
-        const x = cx + 40 + c * 68, y = cy + 145 + r * 75, k = r * 7 + c;
-        ink(G.rect(x, y, 52, 56, 6), { sw: 3, color: C.soft, nopen: true }, 17.4 + k * 0.03, 0.2);
-        ink(`M${x + 10},${y + 46} L${x + 42},${y + 10}`, { sw: 4, color: C.red, nopen: true }, 18.0 + k * 0.05, 0.12);
-      }
-      // bateria descarregando
-      const bx = 1050, by = 400;
-      ink([G.rect(bx, by, 380, 170, 22), G.rect(bx + 380, by + 55, 30, 60, 6)], { sw: 6 }, 18.0, 0.8);
-      fill(G.rect(bx + 14, by + 14, 70, 142, 12), C.red, { off: [0, 0] }, 18.9, 0.4);
-      txt(bx + 190, by + 260, 'cansaço do ano inteiro', { size: 44, w: 800, anchor: 'middle' }, 19.2, 0.9);
-      txt(bx + 190, by - 40, 'bateu forte!', { size: 38, w: 700, color: C.soft, anchor: 'middle' }, 21.2, 0.5);
+      ilustra('operario', {}, 16.7, 2.4);
+      txt(1300, 330, 'DEZEMBRO', { size: 72, w: 900, color: C.blue }, 16.9, 0.8);
+      sublinha(1300, 1700, 355, C.green, 17.7);
+      const bx = 1330, by = 470;
+      ink([G.rect(bx, by, 330, 150, 22), G.rect(bx + 330, by + 48, 26, 54, 6)], { sw: 6 }, 18.0, 0.8);
+      fill(G.rect(bx + 14, by + 14, 60, 122, 12), C.red, { off: [0, 0] }, 18.9, 0.4);
+      txt(bx + 165, by + 230, 'cansaço do ano inteiro', { size: 40, w: 800, anchor: 'middle' }, 19.2, 0.9);
+      txt(bx + 165, by + 290, 'bateu forte!', { size: 36, w: 700, color: C.soft, anchor: 'middle' }, 21.2, 0.5);
       clear(22.5);
 
       // provar que o prédio não vai cair
-      chao(330, 1000, 860, 22.6);
-      predio(530, 860, 270, 500, 22.8);
-      txt(1080, 520, 'Provar que o prédio', { size: 60, w: 800 }, 25.0, 1.0);
-      txt(1080, 600, 'construído no ano', { size: 60, w: 800 }, 26.28, 1.0);
-      txt(1080, 700, 'não vai cair.', { size: 76, w: 900, color: C.blue }, 27.7, 0.7);
-      sublinha(1080, 1540, 725, C.green, 28.3, { d: 0.35 });
+      ilustra('vistoria', {}, 22.6, 2.4);
+      txt(1400, 470, 'Provar que o prédio', { size: 52, w: 800 }, 25.0, 1.0);
+      txt(1400, 540, 'construído no ano', { size: 52, w: 800 }, 26.28, 1.0);
+      txt(1400, 640, 'não vai cair.', { size: 70, w: 900, color: C.blue }, 27.7, 0.7);
+      sublinha(1400, 1830, 665, C.green, 28.3, { d: 0.35 });
     },
   },
 
@@ -74,7 +62,7 @@ export const CENAS = [
       fill(G.rect(560, 230, 800, 100, 26), C.blue, { off: [0, 0] }, 29.7, 0.4);
       txt(960, 295, 'VISTORIA MARCADA', { size: 40, w: 900, color: C.white, anchor: 'middle', ls: 6, nopen: true }, 29.9, 0.6);
       ink(['M680,215 L680,260', 'M1240,215 L1240,260'], { sw: 8 }, 30.6, 0.4);
-      txt(960, 480, '01/12 → 08/01', { size: 130, w: 900, color: C.dark, anchor: 'middle' }, 32.46, 1.8);
+      txt(960, 480, '01/12  →  08/01', { size: 104, w: 900, color: C.dark, anchor: 'middle' }, 32.46, 1.8);
       sublinha(640, 1280, 510, C.green, 34.3);
       txt(960, 600, 'Avaliação final', { size: 54, w: 800, anchor: 'middle' }, 34.98, 0.8);
       txt(960, 660, 'do Ciclo de Performance 2026', { size: 40, w: 600, color: C.soft, anchor: 'middle' }, 36.0, 1.1);
@@ -125,12 +113,13 @@ export const CENAS = [
       txt(130, 150, 'CICLO DE PERFORMANCE 2026', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 59.3, 0.6);
       txt(130, 232, 'Como sua nota é formada', { size: 76, w: 800 }, 59.7, 1.5);
       sublinha(132, 1010, 262, C.green, 61.3);
+      s.ilustra('planta', { out: 63.0 }, 59.6, 2.0);
 
       const cx = 820, cy = 650, R = 250, r = 130;
-      ink(G.circle(cx, cy, R), { sw: 5 }, 62.4, 1.2);
-      ink(G.circle(cx, cy, r), { sw: 5 }, 63.4, 0.6);
+      ink(G.circle(cx, cy, R), { sw: 5 }, 63.4, 1.0);
+      ink(G.circle(cx, cy, r), { sw: 5 }, 64.2, 0.5);
       const div = a => { const [x1, y1] = G.pol(cx, cy, R, a), [x2, y2] = G.pol(cx, cy, r, a); return G.line(x1, y1, x2, y2); };
-      ink([div(0), div(252), div(324)], { sw: 5 }, 63.9, 0.9);
+      ink([div(0), div(252), div(324)], { sw: 5 }, 64.6, 0.8);
 
       // cartão "o quê x como"
       const tf = 'rotate(2 1630 430)';

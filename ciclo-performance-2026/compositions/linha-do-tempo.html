@@ -30,7 +30,7 @@
       <g id="linha-do-tempo-e0" class="hd" data-out="9.4" data-kind="stroke" data-t="0.2" data-d="1"><path class="stk" pathLength="1" d="M586,230 H1334 Q1360,230 1360,256 V674 Q1360,700 1334,700 H586 Q560,700 560,674 V256 Q560,230 586,230 Z" fill="none" stroke="#1B1F3B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
       <text id="linha-do-tempo-e3" class="hd" data-out="9.4" data-kind="text" data-t="1" data-d="0.6" data-nopen="1" x="960" y="295" font-size="40" font-weight="900" fill="#FCFCFC" text-anchor="middle" letter-spacing="6">VISTORIA MARCADA</text>
       <g id="linha-do-tempo-e4" class="hd" data-out="9.4" data-kind="stroke" data-t="1.7" data-d="0.4"><path class="stk" pathLength="1" d="M680,215 L680,260" fill="none" stroke="#1B1F3B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path class="stk" pathLength="1" d="M1240,215 L1240,260" fill="none" stroke="#1B1F3B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
-      <text id="linha-do-tempo-e5" class="hd" data-out="9.4" data-kind="text" data-t="3.56" data-d="1.8" x="960" y="480" font-size="130" font-weight="900" fill="#082381" text-anchor="middle">01/12 → 08/01</text>
+      <text id="linha-do-tempo-e5" class="hd" data-out="9.4" data-kind="text" data-t="3.56" data-d="1.8" x="960" y="480" font-size="104" font-weight="900" fill="#082381" text-anchor="middle">01/12  →  08/01</text>
       <text id="linha-do-tempo-e7" class="hd" data-out="9.4" data-kind="text" data-t="6.08" data-d="0.8" x="960" y="600" font-size="54" font-weight="800" fill="#1B1F3B" text-anchor="middle">Avaliação final</text>
       <text id="linha-do-tempo-e8" class="hd" data-out="9.4" data-kind="text" data-t="7.1" data-d="1.1" x="960" y="660" font-size="40" font-weight="600" fill="#4A5578" text-anchor="middle">do Ciclo de Performance 2026</text>
       <text id="linha-do-tempo-e9" class="hd" data-kind="text" data-t="9.6" data-d="1.3" x="130" y="170" font-size="64" font-weight="800" fill="#1B1F3B" text-anchor="start">O que já fizemos até aqui</text>
@@ -97,11 +97,13 @@
         stk: Array.from(e.querySelectorAll('.stk')),
         from: +e.dataset.from, to: +e.dataset.to, suf: e.dataset.suf || '', dec: +(e.dataset.dec || 0),
         tf: e.getAttribute('transform') || '',
+        t2: +(e.dataset.t2 || 0), d2: +(e.dataset.d2 || 1),
+        mc: e.querySelector('.mc'), tr: e.querySelector('.tr'),
       }));
       const clamp = x => (x < 0 ? 0 : x > 1 ? 1 : x);
       const ease = x => (1 - Math.cos(Math.PI * clamp(x))) / 2;
       const easeOut = x => 1 - Math.pow(1 - clamp(x), 3);
-      els.forEach(it => { it.stk.forEach(s => { s.style.strokeDasharray = '1 1.02'; }); });
+      els.forEach(it => { it.stk.forEach(s => { s.style.strokeDasharray = '1 1.02'; }); if (it.mc) it.mc.style.strokeDasharray = '1 1.02'; });
       // medidas feitas uma vez (e refeitas quando a fonte carrega), antes de qualquer quadro
       function medir() {
         els.forEach(it => {
@@ -124,7 +126,14 @@
           if (o <= 0) continue;
           let sc = 1;
           for (const pt of it.pulse) { const q = (t - pt) / 0.7; if (q > 0 && q < 1) sc = 1 + 0.08 * Math.sin(Math.PI * q); }
-          if (it.kind === 'stroke') {
+          if (it.kind === 'ilus') {
+            const s = it.stk[0];
+            s.style.strokeDashoffset = 1 - p;
+            if (p > 0 && p < 1 && t < it.out) penAt = ptAt(it.pts[0], p);
+            const q2 = clamp((t - it.t2) / it.d2);
+            it.mc.style.strokeDashoffset = 1 - q2;
+            it.tr.style.opacity = 1 - 0.75 * clamp((q2 - 0.5) / 0.5);
+          } else if (it.kind === 'stroke') {
             const n = it.stk.length;
             it.stk.forEach((s, i) => {
               const q = clamp((p - i / n) * n);
@@ -147,7 +156,7 @@
             sc *= 0.92 + 0.08 * easeOut(p);
             it.e.style.opacity = o * easeOut(p);
           }
-          if (sc !== 1 || it.kind === 'img') it.e.setAttribute('transform', it.tf + ' translate(' + it.cx + ',' + it.cy + ') scale(' + sc + ') translate(' + (-it.cx) + ',' + (-it.cy) + ')');
+          if (it.kind === 'ilus') {} else if (sc !== 1 || it.kind === 'img') it.e.setAttribute('transform', it.tf + ' translate(' + it.cx + ',' + it.cy + ') scale(' + sc + ') translate(' + (-it.cx) + ',' + (-it.cy) + ')');
           else if (it.pulse.length) it.e.setAttribute('transform', it.tf);
         }
         if (penAt) { pen.setAttribute('opacity', 1); pen.setAttribute('transform', 'translate(' + penAt.x + ',' + penAt.y + ')'); }
