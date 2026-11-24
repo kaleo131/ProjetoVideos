@@ -107,7 +107,7 @@ export const CENAS = [
 
   // ---------------- CENA 3: a planta da nota (rosca 70/20/10) ----------------
   {
-    id: 'planta-da-nota', start: 59.0, end: 92.8,
+    id: 'planta-da-nota', start: 59.0, end: 87.8,
     desenho(s) {
       const { txt, ink, shape, fill, count, sublinha, circula, seta, G, C } = s;
       txt(130, 150, 'CICLO DE PERFORMANCE 2026', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 59.3, 0.6);
@@ -131,9 +131,9 @@ export const CENAS = [
       txt(1490, 527, '(comportamentos).', { size: 28, w: 600, tf }, 85.9, 0.7);
 
       // metas 70%
-      fill(G.slice(cx, cy, R, r, 0, 252), C.blue, { pulse: [88.38] }, 70.9, 1.0);
+      fill(G.slice(cx, cy, R, r, 0, 252), C.blue, {}, 70.9, 1.0);
       seta(1080, 760, 1230, 724, 71.6, { bend: 0.15 });
-      count(1250, 720, 0, 70, '%', { size: 120, color: C.blue, pulse: [88.38] }, 71.96, 1.0);
+      count(1250, 720, 0, 70, '%', { size: 120, color: C.blue }, 71.96, 1.0);
       txt(1256, 780, 'Metas', { size: 44, w: 800 }, 72.6, 0.5);
       txt(1256, 826, 'o que você entregou', { size: 32, w: 500, color: C.soft }, 74.4, 0.8);
       ink(G.arc(cx, cy, R + 34, 4, 248), { color: C.blue, sw: 6 }, 73.1, 1.1);
@@ -155,8 +155,6 @@ export const CENAS = [
       txt(540, 434, 'Cultura', { size: 32, w: 800, anchor: 'end' }, 81.5, 0.4);
       ink(G.arc(cx, cy, R + 34, 256, 356), { color: C.green, sw: 6 }, 83.3, 0.8);
 
-      // "70% é um peso gigantesco"
-      circula(1345, 680, 150, 85, 88.6, { color: C.green, d: 0.8 });
     },
   },
 ];
