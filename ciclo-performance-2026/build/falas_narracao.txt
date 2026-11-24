@@ -124,37 +124,36 @@
  333.26  336.20 Mas vamos materializar tudo isso pra quem tá acompanhando a gente
  336.20  337.28 não se perder nas regras?
  337.54  339.60 Como essa matemática funciona na vida real?
- 340.12  342.12 Vamos ao exemplo exato da nossa fonte.
- 342.62  345.54 Imagine alguém que teve um desempenho espetacular em metas
- 345.54  347.08 e tirou 97%.
- 347.08  351.54 Como isso vale 70%, temos 67,9 pontos.
- 352.16  354.74 Certo. Anotei aqui. 67,9.
- 355.42  360.16 Aí, em competências, o gestor avaliou com nota 8, ou seja, 80%.
- 360.16  363.84 Multiplicando pelo peso de 20%, dá 16 pontos.
- 364.80  366.48 E em cultura?
- 367.24  371.34 Em cultura, o gestor deu 9, e os clientes internos deram 8.
- 371.88  378.36 A ponderação fecha em 87%, que vezes os 10% de peso resultem 8,7 pontos.
- 378.90  384.50 A soma final fica 67,9, mais 16, mais 8,7.
- 384.98  388.62 O que dá um total cravado de 92,6%.
- 388.62  389.28 Exatamente.
- 389.68  392.02 O recado nas entrelinhas é bem claro.
- 392.38  395.14 Se a pessoa for um gênio que bate todas as metas,
- 395.14  398.20 mas for um trator que diz respeito aos colegas o ano todo,
- 398.56  401.80 as notas de competências e cultura vão derrubar o resultado final.
- 401.98  402.52 Vão mesmo.
- 403.08  407.84 E quando essa conta toda se encerra, vem a etapa fundamental para o desenvolvimento,
- 408.28  410.54 o feedback presencial com o gestor.
- 410.76  412.78 Que não é só conferir um número na tela, né?
- 412.98  415.26 Jamais. É o momento de alinhar rotas.
- 415.68  419.00 E tudo isso precisa ser lançado obrigatoriamente no sistema,
- 419.36  421.28 numa etapa própria da avaliação final.
- 421.66  422.14 Perfeito.
- 422.14  426.18 Olha, para quem precisa resolver qualquer dúvida adicional sobre o ciclo da Curi,
- 426.48  431.60 o canal oficial é o e-mail remuneração.rharrobacuri.net.
- 431.98  434.42 O nosso mergulho profundo fica por aqui hoje.
- 434.56  435.02 Tem isso aí.
- 435.82  437.42 E fica a provocação de sempre, pessoal.
- 437.68  438.20 Bem lembrado.
- 438.62  441.36 Fechando exatamente com a reflexão que puxamos lá no início.
- 441.78  444.68 Se a vistoria fosse hoje, o seu prédio passaria?
- 445.28  445.74 Até a próxima.
+ 340.19  343.11 Imagine alguém que teve um desempenho espetacular em metas
+ 343.11  344.65 e tirou 97%.
+ 344.65  349.11 Como isso vale 70%, temos 67,9 pontos.
+ 349.73  352.31 Certo. Anotei aqui. 67,9.
+ 352.99  357.73 Aí, em competências, o gestor avaliou com nota 8, ou seja, 80%.
+ 357.73  361.41 Multiplicando pelo peso de 20%, dá 16 pontos.
+ 362.37  364.05 E em cultura?
+ 364.81  368.91 Em cultura, o gestor deu 9, e os clientes internos deram 8.
+ 369.45  375.93 A ponderação fecha em 87%, que vezes os 10% de peso resultem 8,7 pontos.
+ 376.47  382.07 A soma final fica 67,9, mais 16, mais 8,7.
+ 382.55  386.19 O que dá um total cravado de 92,6%.
+ 386.19  386.85 Exatamente.
+ 387.25  389.59 O recado nas entrelinhas é bem claro.
+ 389.95  392.71 Se a pessoa for um gênio que bate todas as metas,
+ 392.71  395.77 mas for um trator que diz respeito aos colegas o ano todo,
+ 396.13  399.37 as notas de competências e cultura vão derrubar o resultado final.
+ 399.55  400.09 Vão mesmo.
+ 400.65  405.41 E quando essa conta toda se encerra, vem a etapa fundamental para o desenvolvimento,
+ 405.85  408.11 o feedback presencial com o gestor.
+ 408.33  410.35 Que não é só conferir um número na tela, né?
+ 410.55  412.83 Jamais. É o momento de alinhar rotas.
+ 413.25  416.57 E tudo isso precisa ser lançado obrigatoriamente no sistema,
+ 416.93  418.85 numa etapa própria da avaliação final.
+ 419.23  419.71 Perfeito.
+ 419.71  423.75 Olha, para quem precisa resolver qualquer dúvida adicional sobre o ciclo da Curi,
+ 424.05  429.17 o canal oficial é o e-mail remuneração.rharrobacuri.net.
+ 429.55  431.99 O nosso mergulho profundo fica por aqui hoje.
+ 432.13  432.59 Tem isso aí.
+ 433.39  434.99 E fica a provocação de sempre, pessoal.
+ 435.25  435.77 Bem lembrado.
+ 436.19  438.93 Fechando exatamente com a reflexão que puxamos lá no início.
+ 439.35  442.25 Se a vistoria fosse hoje, o seu prédio passaria?
+ 442.85  443.31 Até a próxima.

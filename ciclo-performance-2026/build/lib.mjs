@@ -1,5 +1,5 @@
 // Gera o HTML de cada cena no estilo "quadro branco profissional":
-// traço de tinta limpo (com leve tremor de mão via filtro), preenchimento de marcador
+// traço de tinta com leve tremor de mão, feito no próprio vetor (build/tremor.mjs), liso e sem serrilhado, preenchimento de marcador
 // nas cores da marca deslocado do contorno, e texto em Figtree escrito da esquerda para a direita.
 //
 // Todos os tempos passados para a API são do VÍDEO (segundos da narração), não da cena.
@@ -12,6 +12,7 @@ export const C = {
   ink: '#1B1F3B', soft: '#4A5578', skin: '#F3D2B5', red: '#D9534F', yellow: '#FFD873',
 };
 import fs from 'node:fs';
+import { tremor } from './tremor.mjs';
 const CAIXAS = fs.existsSync('assets/ilustracoes/caixas.json') ? JSON.parse(fs.readFileSync('assets/ilustracoes/caixas.json', 'utf8')) : {};
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const r2 = n => Math.round(n * 100) / 100;
@@ -68,14 +69,14 @@ export function makeScene(id, start, dur) {
     ink(d, o = {}, t = 0, du = 0.8) {
       const ds = [].concat(d);
       let s = `<g ${attrs('stroke', t, du, o)}>`;
-      ds.forEach(p => { s += `<path class="stk" pathLength="1" d="${p}" fill="none" stroke="${o.color || C.ink}" stroke-width="${o.sw || 5}" stroke-linecap="round" stroke-linejoin="round"/>`; });
+      ds.forEach((p, k) => { s += `<path class="stk" pathLength="1" d="${o.reto ? p : tremor(p, o.amp ?? 1.6, n * 3 + k)}" fill="none" stroke="${o.color || C.ink}" stroke-width="${o.sw || 5}" stroke-linecap="round" stroke-linejoin="round"/>`; });
       layers.ink.push(s + '</g>');
     },
     // preenchimento de marcador (pinta da esquerda p/ direita ou de baixo p/ cima)
     fill(d, color, o = {}, t = 0, du = 0.6) {
       const off = o.off ?? [6, 6];
       const dir = o.dir || 'x';
-      layers.mk.push(`<g ${attrs('fill', t, du, o)} data-dir="${dir}"><path d="${d}" fill="${color}" transform="translate(${off[0]},${off[1]})" opacity="${o.op ?? 1}"/></g>`);
+      layers.mk.push(`<g ${attrs('fill', t, du, o)} data-dir="${dir}"><path d="${tremor(d, o.ampF ?? 3, n * 5 + 1)}" fill="${color}" transform="translate(${off[0]},${off[1]})" opacity="${o.op ?? 1}"/></g>`);
     },
     // forma completa: contorno + preenchimento logo depois
     shape(d, color, o = {}, t = 0, du = 0.8) {
@@ -164,18 +165,19 @@ function sceneHtml(id, dur, L) {
     @font-face { font-family: 'Figtree'; src: url('assets/fonts/figtree-latin-ext.woff2') format('woff2'); font-weight: 300 900; unicode-range: U+0100-024F; }
     #${id} { position: absolute; inset: 0; }
     #${id} svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-    #${id} text { font-family: 'Figtree', sans-serif; }
+    #${id} text { font-family: 'Figtree', sans-serif; text-rendering: geometricPrecision; }
+    #${id} path { shape-rendering: geometricPrecision; }
   </style>
   <div id="${id}" data-composition-id="${id}" data-width="1920" data-height="1080" data-layout-allow-overlap data-layout-allow-overflow>
     <svg id="${id}-sv" class="clip" data-start="0" data-duration="${dur}" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <filter id="${id}-tinta" x="-2%" y="-2%" width="104%" height="104%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/></filter>
-        <filter id="${id}-marcador" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency=".02" numOctaves="2" seed="9" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G"/></filter>
+        <filter id="${id}-tinta" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="1" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3.5" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.6"/></filter>
+        <filter id="${id}-marcador" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="1" seed="9" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="10" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.9"/></filter>
       </defs>
-      <g id="${id}-mk" filter="url(#${id}-marcador)">
+      <g id="${id}-mk">
       ${L.mk.join('\n      ')}
       </g>
-      <g id="${id}-ink" filter="url(#${id}-tinta)">
+      <g id="${id}-ink">
       ${L.ink.join('\n      ')}
       </g>
       <g id="${id}-img">

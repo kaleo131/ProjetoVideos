@@ -346,7 +346,7 @@ export const CENAS = [
 
   // ---------------- CENA 8: juntando tudo (92,6%) ----------------
   {
-    id: 'conta-final', start: 333.1, end: 389.6,
+    id: 'conta-final', start: 333.1, end: 387.17,
     desenho(s) {
       const { txt, ink, fill, shape, count, sublinha, circula, seta, clear, G, C } = s;
       txt(130, 120, 'JUNTANDO TUDO', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 333.3, 0.4);
@@ -354,72 +354,72 @@ export const CENAS = [
       sublinha(132, 820, 222, C.green, 335.0);
       const L = 160, V = 900, P = 1180, R = 1560, Y = [350, 500, 650];
       // metas
-      shape(G.rect(L - 30, Y[0] - 62, 60, 80, 12), C.blue, { sw: 3, nopen: true }, 342.6, 0.3);
-      txt(L + 50, Y[0], 'Metas', { size: 50, w: 900 }, 342.8, 0.5);
-      count(V, Y[0], 0, 97, '%', { size: 58, w: 900, color: C.ink, anchor: 'end' }, 345.6, 0.8);
-      txt(P, Y[0], '× 70%', { size: 50, w: 700, color: C.soft, anchor: 'end' }, 347.2, 0.5);
-      txt(P + 60, Y[0], '=', { size: 50, w: 700, color: C.soft }, 348.6, 0.2);
-      count(R, Y[0], 0, 67.9, '', { size: 64, w: 900, color: C.blue, anchor: 'end', dec: 1 }, 349.2, 1.2);
+      shape(G.rect(L - 30, Y[0] - 62, 60, 80, 12), C.blue, { sw: 3, nopen: true }, 340.17, 0.3);
+      txt(L + 50, Y[0], 'Metas', { size: 50, w: 900 }, 340.37, 0.5);
+      count(V, Y[0], 0, 97, '%', { size: 58, w: 900, color: C.ink, anchor: 'end' }, 343.17, 0.8);
+      txt(P, Y[0], '× 70%', { size: 50, w: 700, color: C.soft, anchor: 'end' }, 344.77, 0.5);
+      txt(P + 60, Y[0], '=', { size: 50, w: 700, color: C.soft }, 346.17, 0.2);
+      count(R, Y[0], 0, 67.9, '', { size: 64, w: 900, color: C.blue, anchor: 'end', dec: 1 }, 346.77, 1.2);
       // competências
-      shape(G.rect(L - 30, Y[1] - 62, 60, 80, 12), C.green, { sw: 3, nopen: true }, 355.4, 0.3);
-      txt(L + 50, Y[1], 'Competências', { size: 50, w: 900 }, 355.6, 0.6);
-      txt(L + 50, Y[1] + 50, 'nota 8 do gestor = 80%', { size: 28, w: 600, color: C.soft }, 357.6, 1.0);
-      count(V, Y[1], 0, 80, '%', { size: 58, w: 900, color: C.ink, anchor: 'end' }, 358.4, 0.8);
-      txt(P, Y[1], '× 20%', { size: 50, w: 700, color: C.soft, anchor: 'end' }, 360.4, 0.5);
-      txt(P + 60, Y[1], '=', { size: 50, w: 700, color: C.soft }, 361.8, 0.2);
-      count(R, Y[1], 0, 16, '', { size: 64, w: 900, color: '#1E9E8C', anchor: 'end' }, 362.2, 1.0);
+      shape(G.rect(L - 30, Y[1] - 62, 60, 80, 12), C.green, { sw: 3, nopen: true }, 352.97, 0.3);
+      txt(L + 50, Y[1], 'Competências', { size: 50, w: 900 }, 353.17, 0.6);
+      txt(L + 50, Y[1] + 50, 'nota 8 do gestor = 80%', { size: 28, w: 600, color: C.soft }, 355.17, 1.0);
+      count(V, Y[1], 0, 80, '%', { size: 58, w: 900, color: C.ink, anchor: 'end' }, 355.97, 0.8);
+      txt(P, Y[1], '× 20%', { size: 50, w: 700, color: C.soft, anchor: 'end' }, 357.97, 0.5);
+      txt(P + 60, Y[1], '=', { size: 50, w: 700, color: C.soft }, 359.37, 0.2);
+      count(R, Y[1], 0, 16, '', { size: 64, w: 900, color: '#1E9E8C', anchor: 'end' }, 359.77, 1.0);
       // cultura
-      shape(G.rect(L - 30, Y[2] - 62, 60, 80, 12), C.dark, { sw: 3, nopen: true }, 364.8, 0.3);
-      txt(L + 50, Y[2], 'Cultura', { size: 50, w: 900 }, 365.0, 0.5);
-      txt(L + 50, Y[2] + 50, 'gestor 9 × 70% + clientes internos 8 × 30%', { size: 28, w: 600, color: C.soft }, 367.4, 2.6);
-      count(V, Y[2], 0, 87, '%', { size: 58, w: 900, color: C.ink, anchor: 'end' }, 372.0, 0.8);
-      txt(P, Y[2], '× 10%', { size: 50, w: 700, color: C.soft, anchor: 'end' }, 374.6, 0.5);
-      txt(P + 60, Y[2], '=', { size: 50, w: 700, color: C.soft }, 376.4, 0.2);
-      count(R, Y[2], 0, 8.7, '', { size: 64, w: 900, color: C.dark, anchor: 'end', dec: 1 }, 376.8, 1.0);
+      shape(G.rect(L - 30, Y[2] - 62, 60, 80, 12), C.dark, { sw: 3, nopen: true }, 362.37, 0.3);
+      txt(L + 50, Y[2], 'Cultura', { size: 50, w: 900 }, 362.57, 0.5);
+      txt(L + 50, Y[2] + 50, 'gestor 9 × 70% + clientes internos 8 × 30%', { size: 28, w: 600, color: C.soft }, 364.97, 2.6);
+      count(V, Y[2], 0, 87, '%', { size: 58, w: 900, color: C.ink, anchor: 'end' }, 369.57, 0.8);
+      txt(P, Y[2], '× 10%', { size: 50, w: 700, color: C.soft, anchor: 'end' }, 372.17, 0.5);
+      txt(P + 60, Y[2], '=', { size: 50, w: 700, color: C.soft }, 373.97, 0.2);
+      count(R, Y[2], 0, 8.7, '', { size: 64, w: 900, color: C.dark, anchor: 'end', dec: 1 }, 374.37, 1.0);
       // soma
-      ink(`M${L - 40},${Y[2] + 100} L${R + 60},${Y[2] + 100}`, { sw: 5 }, 378.9, 0.6);
-      txt(L + 50, Y[2] + 210, 'Nota final', { size: 58, w: 900 }, 379.6, 0.6);
-      txt(P + 60, Y[2] + 200, '67,9 + 16 + 8,7 =', { size: 34, w: 600, color: C.soft, anchor: 'end' }, 380.0, 2.2);
-      count(R + 40, Y[2] + 215, 0, 92.6, '%', { size: 96, w: 900, color: C.blue, anchor: 'end', dec: 1 }, 385.0, 1.6);
-      circula(R - 120, Y[2] + 180, 230, 85, 387.0, { color: C.green, d: 0.8 });
+      ink(`M${L - 40},${Y[2] + 100} L${R + 60},${Y[2] + 100}`, { sw: 5 }, 376.47, 0.6);
+      txt(L + 50, Y[2] + 210, 'Nota final', { size: 58, w: 900 }, 377.17, 0.6);
+      txt(P + 60, Y[2] + 200, '67,9 + 16 + 8,7 =', { size: 34, w: 600, color: C.soft, anchor: 'end' }, 377.57, 2.2);
+      count(R + 40, Y[2] + 215, 0, 92.6, '%', { size: 96, w: 900, color: C.blue, anchor: 'end', dec: 1 }, 382.57, 1.6);
+      circula(R - 120, Y[2] + 180, 230, 85, 384.57, { color: C.green, d: 0.8 });
     },
   },
 
   // ---------------- CENA 9: o recado, o feedback e o fechamento ----------------
   {
-    id: 'fechamento', start: 389.6, end: 446.2,
+    id: 'fechamento', start: 387.17, end: 443.77,
     desenho(s) {
       const { txt, ink, fill, shape, count, sublinha, circula, seta, clear, ilustra, img, G, C } = s;
-      txt(960, 260, 'O recado', { size: 34, w: 900, color: C.soft, anchor: 'middle', ls: 6 }, 389.8, 0.5);
-      txt(960, 400, 'Gênio nas metas', { size: 70, w: 900, color: C.blue, anchor: 'middle' }, 392.4, 1.0);
-      txt(960, 500, '+ trator com os colegas', { size: 60, w: 900, color: C.red, anchor: 'middle' }, 395.2, 1.2);
-      ink(G.arrow(960, 545, 960, 640, 0, 22), { sw: 6 }, 398.4, 0.4);
-      txt(960, 740, 'competências e cultura derrubam a nota', { size: 46, w: 800, anchor: 'middle' }, 398.8, 1.8);
-      sublinha(560, 1360, 765, C.green, 400.8);
-      clear(402.8);
+      txt(960, 260, 'O recado', { size: 34, w: 900, color: C.soft, anchor: 'middle', ls: 6 }, 387.37, 0.5);
+      txt(960, 400, 'Gênio nas metas', { size: 70, w: 900, color: C.blue, anchor: 'middle' }, 389.97, 1.0);
+      txt(960, 500, '+ trator com os colegas', { size: 60, w: 900, color: C.red, anchor: 'middle' }, 392.77, 1.2);
+      ink(G.arrow(960, 545, 960, 640, 0, 22), { sw: 6 }, 395.97, 0.4);
+      txt(960, 740, 'competências e cultura derrubam a nota', { size: 46, w: 800, anchor: 'middle' }, 396.37, 1.8);
+      sublinha(560, 1360, 765, C.green, 398.37);
+      clear(400.37);
 
-      ilustra('feedback', { tf: 'translate(20,160) scale(0.78)' }, 403.0, 2.6);
-      txt(1240, 380, 'Feedback', { size: 70, w: 900, color: C.blue }, 408.3, 0.7);
-      txt(1240, 450, 'presencial, com o gestor', { size: 40, w: 800 }, 409.2, 1.1);
-      sublinha(1240, 1820, 475, C.green, 410.5);
-      txt(1240, 560, 'Não é só conferir um número:', { size: 32, w: 600, color: C.soft }, 410.8, 1.0);
-      txt(1240, 605, 'é alinhar rotas.', { size: 40, w: 800, color: C.dark }, 413.0, 0.8);
-      txt(1240, 710, 'Registro obrigatório no sistema,', { size: 32, w: 700 }, 415.7, 1.1);
-      txt(1240, 755, 'em etapa própria da avaliação final', { size: 32, w: 700 }, 419.4, 1.4);
-      clear(422.0);
+      ilustra('feedback', { tf: 'translate(20,160) scale(0.78)' }, 400.57, 2.6);
+      txt(1240, 380, 'Feedback', { size: 70, w: 900, color: C.blue }, 405.87, 0.7);
+      txt(1240, 450, 'presencial, com o gestor', { size: 40, w: 800 }, 406.77, 1.1);
+      sublinha(1240, 1820, 475, C.green, 408.07);
+      txt(1240, 560, 'Não é só conferir um número:', { size: 32, w: 600, color: C.soft }, 408.37, 1.0);
+      txt(1240, 605, 'é alinhar rotas.', { size: 40, w: 800, color: C.dark }, 410.57, 0.8);
+      txt(1240, 710, 'Registro obrigatório no sistema,', { size: 32, w: 700 }, 413.27, 1.1);
+      txt(1240, 755, 'em etapa própria da avaliação final', { size: 32, w: 700 }, 416.97, 1.4);
+      clear(419.57);
 
-      txt(960, 330, 'Dúvidas sobre o ciclo?', { size: 54, w: 800, anchor: 'middle' }, 422.3, 1.2);
+      txt(960, 330, 'Dúvidas sobre o ciclo?', { size: 54, w: 800, anchor: 'middle' }, 419.87, 1.2);
       const ex = 600, ey = 430;
-      ink([G.rect(ex, ey, 140, 96, 10), `M${ex},${ey} L${ex + 70},${ey + 52} L${ex + 140},${ey}`], { sw: 5, color: C.blue }, 425.6, 0.7);
-      txt(780, 500, 'remuneracao.rh@cury.net', { size: 62, w: 900, color: C.blue }, 426.5, 2.2);
-      sublinha(780, 1560, 528, C.green, 429.0);
-      clear(435.6);
+      ink([G.rect(ex, ey, 140, 96, 10), `M${ex},${ey} L${ex + 70},${ey + 52} L${ex + 140},${ey}`], { sw: 5, color: C.blue }, 423.17, 0.7);
+      txt(780, 500, 'remuneracao.rh@cury.net', { size: 62, w: 900, color: C.blue }, 424.07, 2.2);
+      sublinha(780, 1560, 528, C.green, 426.57);
+      clear(433.17);
 
-      ilustra('vistoria', { tf: 'translate(20,120) scale(0.8)' }, 435.8, 2.4);
-      txt(1180, 450, 'Se a vistoria', { size: 60, w: 800 }, 441.8, 0.7);
-      txt(1180, 530, 'fosse hoje,', { size: 60, w: 800 }, 442.5, 0.6);
-      txt(1180, 640, 'o seu prédio passaria?', { size: 54, w: 900, color: C.blue }, 443.2, 1.2);
-      sublinha(1180, 1800, 665, C.green, 444.5, { d: 0.4 });
+      ilustra('vistoria', { tf: 'translate(20,120) scale(0.8)' }, 433.37, 2.4);
+      txt(1180, 450, 'Se a vistoria', { size: 60, w: 800 }, 439.37, 0.7);
+      txt(1180, 530, 'fosse hoje,', { size: 60, w: 800 }, 440.07, 0.6);
+      txt(1180, 640, 'o seu prédio passaria?', { size: 54, w: 900, color: C.blue }, 440.77, 1.2);
+      sublinha(1180, 1800, 665, C.green, 442.07, { d: 0.4 });
     },
   },
 ];
