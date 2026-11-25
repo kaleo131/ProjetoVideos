@@ -8,7 +8,7 @@
     #mutirao path { shape-rendering: geometricPrecision; }
   </style>
   <div id="mutirao" data-composition-id="mutirao" data-width="1920" data-height="1080" data-layout-allow-overlap data-layout-allow-overflow>
-    <svg id="mutirao-sv" class="clip" data-start="0" data-duration="29.1" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <svg id="mutirao-sv" class="clip" data-start="0" data-duration="28.98" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <filter id="mutirao-tinta" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="1" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3.5" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.6"/></filter>
         <filter id="mutirao-marcador" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="1" seed="9" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="10" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.9"/></filter>
@@ -32,7 +32,7 @@
       <text id="mutirao-e14" class="hd" data-kind="text" data-t="17.5" data-d="1" x="1340" y="595" font-size="46" font-weight="900" fill="#1A35E6" text-anchor="start">acumulado do período</text>
       <text id="mutirao-e16" class="hd" data-kind="text" data-t="20.5" data-d="0.7" x="1340" y="720" font-size="38" font-weight="700" fill="#1B1F3B" text-anchor="start">Acompanhamentos =</text>
       <text id="mutirao-e17" class="hd" data-kind="text" data-t="21.7" data-d="0.7" x="1340" y="775" font-size="46" font-weight="900" fill="#082381" text-anchor="start">diário de obra</text>
-      <text id="mutirao-e18" class="hd" data-kind="text" data-t="25" data-d="1" x="1340" y="860" font-size="34" font-weight="600" fill="#4A5578" text-anchor="start">tijolo por tijolo, mês a mês</text>
+      <text id="mutirao-e18" class="hd" data-kind="text" data-t="25" data-d="1" x="1340" y="860" font-size="34" font-weight="600" fill="#4A5578" text-anchor="start">bloco por bloco, mês a mês</text>
       </g>
       <g id="mutirao-img">
       <g id="mutirao-e3" class="hd" data-out="9.2" data-kind="ilus" data-t="1.2" data-d="2.6" transform="translate(40,235) scale(0.78)" data-t2="3.41" data-d2="1.4">
@@ -61,7 +61,7 @@
   <script>
     (function () {
       // Tudo é função do tempo da cena: cada .hd tem data-t (início), data-d (duração) e, opcional, data-out (quando é apagado).
-      const DUR = 29.1, FADE_IN = 0.35, FADE_OUT = 0.45, APAGA = 0.45;
+      const DUR = 28.98, FADE_IN = 0.35, FADE_OUT = 0.45, APAGA = 0.45;
       const root = document.getElementById('mutirao-sv');
       const pen = document.getElementById('mutirao-caneta');
       const els = Array.from(root.querySelectorAll('.hd')).map(e => ({

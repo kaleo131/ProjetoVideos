@@ -158,7 +158,7 @@ export const CENAS = [
   },
   // ---------------- CENA 4: efeito mutirão e "não é média" ----------------
   {
-    id: 'mutirao', start: 87.8, end: 116.9,
+    id: 'mutirao', start: 87.8, end: 116.78,
     desenho(s) {
       const { txt, ink, fill, sublinha, circula, seta, clear, ilustra, G, C } = s;
       txt(130, 120, 'METAS · 70% DA NOTA', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 87.9, 0.5);
@@ -181,55 +181,55 @@ export const CENAS = [
       sublinha(1340, 1820, 618, C.green, 106.5);
       txt(1340, 720, 'Acompanhamentos =', { size: 38, w: 700 }, 108.3, 0.7);
       txt(1340, 775, 'diário de obra', { size: 46, w: 900, color: C.dark }, 109.5, 0.7);
-      txt(1340, 860, 'tijolo por tijolo, mês a mês', { size: 34, w: 600, color: C.soft }, 112.8, 1.0);
+      txt(1340, 860, 'bloco por bloco, mês a mês', { size: 34, w: 600, color: C.soft }, 112.8, 1.0);
     },
   },
 
   // ---------------- CENA 5: atingimento (mínimo, alvo, teto), golfe e exemplo A–D ----------------
   {
-    id: 'atingimento', start: 116.9, end: 202.4,
+    id: 'atingimento', start: 116.78, end: 202.28,
     desenho(s) {
       const { txt, ink, fill, shape, count, sublinha, circula, seta, clear, ilustra, G, C } = s;
-      txt(130, 120, 'METAS · ATINGIMENTO', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 117.0, 0.5);
-      txt(130, 195, 'Como a meta vira porcentagem', { size: 64, w: 800 }, 117.3, 1.3);
-      sublinha(132, 1060, 222, C.green, 118.7);
+      txt(130, 120, 'METAS · ATINGIMENTO', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 116.88, 0.5);
+      txt(130, 195, 'Como a meta vira porcentagem', { size: 64, w: 800 }, 117.18, 1.3);
+      sublinha(132, 1060, 222, C.green, 118.58);
       // régua
       const Y = 560, X0 = 200, XM = 640, XA = 1240, XT = 1560, X1 = 1720;
-      ink(`M${X0},${Y} L${X1},${Y}`, { sw: 6 }, 117.8, 0.9);
-      fill(G.rect(X0, Y - 60, XM - X0, 60, 8), '#F4B6B3', { off: [0, 0] }, 119.0, 0.6);
-      ink(G.line(XM, Y - 90, XM, Y + 30), { sw: 5 }, 119.4, 0.3);
-      txt(XM, Y + 75, 'Mínimo', { size: 34, w: 800, anchor: 'middle' }, 119.6, 0.5);
-      txt((X0 + XM) / 2, Y - 100, 'nota 0', { size: 58, w: 900, color: C.red, anchor: 'middle' }, 121.0, 0.6);
-      txt((X0 + XM) / 2, Y + 75, 'abaixo do mínimo', { size: 28, w: 600, color: C.soft, anchor: 'middle' }, 122.6, 0.7);
-      fill(G.rect(XM, Y - 60, XA - XM, 60, 8), '#BFC8FA', { off: [0, 0] }, 124.4, 1.2);
-      ink(G.line(XA, Y - 90, XA, Y + 30), { sw: 5 }, 126.2, 0.3);
-      txt(XA, Y + 75, 'Alvo = 100%', { size: 34, w: 800, anchor: 'middle' }, 126.4, 0.6);
-      txt((XM + XA) / 2, Y - 100, 'aproximação do alvo', { size: 40, w: 800, color: C.blue, anchor: 'middle' }, 126.6, 1.2);
-      txt((XM + XA) / 2, Y + 150, 'ex.: alvo 100, realizado 90 → 90%', { size: 30, w: 600, color: C.soft, anchor: 'middle' }, 127.6, 1.2);
-      fill(G.rect(XA, Y - 60, XT - XA, 60, 8), '#A6E8DE', { off: [0, 0] }, 128.8, 0.6);
-      ink(G.line(XT, Y - 90, XT, Y + 30), { sw: 5 }, 129.4, 0.3);
-      txt(XT, Y + 75, 'Teto', { size: 34, w: 800, anchor: 'middle' }, 129.6, 0.4);
-      count((XA + XT) / 2, Y - 100, 100, 110, '%', { size: 64, color: '#1E9E8C', anchor: 'middle' }, 129.8, 1.0);
-      clear(132.1);
+      ink(`M${X0},${Y} L${X1},${Y}`, { sw: 6 }, 117.68, 0.9);
+      fill(G.rect(X0, Y - 60, XM - X0, 60, 8), '#F4B6B3', { off: [0, 0] }, 118.88, 0.6);
+      ink(G.line(XM, Y - 90, XM, Y + 30), { sw: 5 }, 119.28, 0.3);
+      txt(XM, Y + 75, 'Mínimo', { size: 34, w: 800, anchor: 'middle' }, 119.48, 0.5);
+      txt((X0 + XM) / 2, Y - 100, 'nota 0', { size: 58, w: 900, color: C.red, anchor: 'middle' }, 120.88, 0.6);
+      txt((X0 + XM) / 2, Y + 75, 'abaixo do mínimo', { size: 28, w: 600, color: C.soft, anchor: 'middle' }, 122.48, 0.7);
+      fill(G.rect(XM, Y - 60, XA - XM, 60, 8), '#BFC8FA', { off: [0, 0] }, 124.28, 1.2);
+      ink(G.line(XA, Y - 90, XA, Y + 30), { sw: 5 }, 126.08, 0.3);
+      txt(XA, Y + 75, 'Alvo = 100%', { size: 34, w: 800, anchor: 'middle' }, 126.28, 0.6);
+      txt((XM + XA) / 2, Y - 100, 'aproximação do alvo', { size: 40, w: 800, color: C.blue, anchor: 'middle' }, 126.48, 1.2);
+      txt((XM + XA) / 2, Y + 150, 'ex.: alvo 100, realizado 90 → 90%', { size: 30, w: 600, color: C.soft, anchor: 'middle' }, 127.48, 1.2);
+      fill(G.rect(XA, Y - 60, XT - XA, 60, 8), '#A6E8DE', { off: [0, 0] }, 128.68, 0.6);
+      ink(G.line(XT, Y - 90, XT, Y + 30), { sw: 5 }, 129.28, 0.3);
+      txt(XT, Y + 75, 'Teto', { size: 34, w: 800, anchor: 'middle' }, 129.48, 0.4);
+      count((XA + XT) / 2, Y - 100, 100, 110, '%', { size: 64, color: '#1E9E8C', anchor: 'middle' }, 129.68, 1.0);
+      clear(131.98);
 
-      ilustra('golfe', {}, 132.4, 2.6);
-      txt(1360, 330, 'Metas de redução:', { size: 40, w: 700 }, 132.6, 0.8);
-      txt(1360, 395, 'custos · erros · acidentes', { size: 34, w: 600, color: C.soft }, 135.4, 1.2);
-      txt(1360, 510, 'Menor é melhor', { size: 62, w: 900, color: C.blue }, 138.7, 0.9);
-      sublinha(1360, 1800, 535, C.green, 139.8);
-      txt(1360, 640, 'Como no golfe: menos', { size: 38, w: 700 }, 143.9, 0.8);
-      txt(1360, 690, 'tacadas, melhor nota.', { size: 38, w: 700 }, 144.7, 0.8);
-      txt(1360, 800, 'Acidentes: zero é o troféu', { size: 36, w: 800, color: C.dark }, 147.6, 1.1);
-      clear(158.7);
+      ilustra('golfe', {}, 132.28, 2.6);
+      txt(1360, 330, 'Metas de redução:', { size: 40, w: 700 }, 132.48, 0.8);
+      txt(1360, 395, 'custos · erros · acidentes', { size: 34, w: 600, color: C.soft }, 135.28, 1.2);
+      txt(1360, 510, 'Menor é melhor', { size: 62, w: 900, color: C.blue }, 138.58, 0.9);
+      sublinha(1360, 1800, 535, C.green, 139.68);
+      txt(1360, 640, 'Como no golfe: menos', { size: 38, w: 700 }, 143.78, 0.8);
+      txt(1360, 690, 'tacadas, melhor nota.', { size: 38, w: 700 }, 144.58, 0.8);
+      txt(1360, 800, 'Acidentes: zero é o troféu', { size: 36, w: 800, color: C.dark }, 147.48, 1.1);
+      clear(158.58);
 
       // exemplo A–D
-      txt(130, 120, 'EXEMPLO PRÁTICO', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 159.0, 0.5);
-      txt(130, 195, 'Somando a nota de metas', { size: 64, w: 800 }, 159.3, 1.2);
-      sublinha(132, 880, 222, C.green, 160.6);
+      txt(130, 120, 'EXEMPLO PRÁTICO', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 158.88, 0.5);
+      txt(130, 195, 'Somando a nota de metas', { size: 64, w: 800 }, 159.18, 1.2);
+      sublinha(132, 880, 222, C.green, 160.48);
       const cx = [300, 640, 1030, 1430], Y0 = 320, DY = 100;
-      ['Meta', 'Peso', 'Atingimento', 'Pontos'].forEach((h, i) => txt(cx[i], Y0, h, { size: 34, w: 800, color: C.soft, anchor: 'middle', nopen: true }, 161.4 + i * 0.25, 0.3));
-      ink(`M180,${Y0 + 25} L1560,${Y0 + 25}`, { sw: 4 }, 162.4, 0.5);
-      const linhas = [['A', '30', '100%', 30, 163.48], ['B', '30', '110%', 33, 169.96], ['C', '20', '80%', 16, 178.16], ['D', '20', '90%', 18, 185.02]];
+      ['Meta', 'Peso', 'Atingimento', 'Pontos'].forEach((h, i) => txt(cx[i], Y0, h, { size: 34, w: 800, color: C.soft, anchor: 'middle', nopen: true }, 161.28 + i * 0.25, 0.3));
+      ink(`M180,${Y0 + 25} L1560,${Y0 + 25}`, { sw: 4 }, 162.28, 0.5);
+      const linhas = [['A', '30', '100%', 30, 163.36], ['B', '30', '110%', 33, 169.84], ['C', '20', '80%', 16, 178.04], ['D', '20', '90%', 18, 184.9]];
       linhas.forEach(([m, p, at, pts, t], k) => {
         const y = Y0 + DY * (k + 1);
         txt(cx[0], y, m, { size: 48, w: 900, color: C.dark, anchor: 'middle' }, t, 0.3);
@@ -237,49 +237,49 @@ export const CENAS = [
         txt(cx[2], y, at, { size: 46, w: 700, anchor: 'middle', color: at === '110%' ? '#1E9E8C' : C.ink }, t + (m === 'B' ? 2.8 : 2.4), 0.4);
         count(cx[3], y, 0, pts, '', { size: 52, w: 900, color: C.blue, anchor: 'middle' }, t + (m === 'B' ? 5.3 : m === 'C' ? 4.8 : 3.6), 0.6);
       });
-      txt(cx[2] + 140, Y0 + DY * 2 + 6, 'teto!', { size: 28, w: 800, color: '#1E9E8C' }, 174.0, 0.3);
-      ink(`M180,${Y0 + DY * 4 + 45} L1560,${Y0 + DY * 4 + 45}`, { sw: 4 }, 190.2, 0.5);
-      txt(cx[2], Y0 + DY * 5 + 10, '30 + 33 + 16 + 18 =', { size: 42, w: 700, anchor: 'middle' }, 191.4, 2.4);
-      count(cx[3], Y0 + DY * 5 + 18, 0, 97, '%', { size: 84, w: 900, color: C.blue, anchor: 'middle' }, 194.4, 1.2);
-      circula(cx[3], Y0 + DY * 5 - 10, 130, 70, 196.8, { color: C.green });
-      txt(1680, Y0 + DY * 5, '= o quê', { size: 40, w: 800, color: C.dark }, 201.0, 0.6);
+      txt(cx[2] + 140, Y0 + DY * 2 + 6, 'teto!', { size: 28, w: 800, color: '#1E9E8C' }, 173.88, 0.3);
+      ink(`M180,${Y0 + DY * 4 + 45} L1560,${Y0 + DY * 4 + 45}`, { sw: 4 }, 190.08, 0.5);
+      txt(cx[2], Y0 + DY * 5 + 10, '30 + 33 + 16 + 18 =', { size: 42, w: 700, anchor: 'middle' }, 191.28, 2.4);
+      count(cx[3], Y0 + DY * 5 + 18, 0, 97, '%', { size: 84, w: 900, color: C.blue, anchor: 'middle' }, 194.28, 1.2);
+      circula(cx[3], Y0 + DY * 5 - 10, 130, 70, 196.68, { color: C.green });
+      txt(1680, Y0 + DY * 5, '= o quê', { size: 40, w: 800, color: C.dark }, 200.88, 0.6);
     },
   },
 
   // ---------------- CENA 6: competências, a nova escala de 0 a 10 ----------------
   {
-    id: 'competencias', start: 202.4, end: 284,
+    id: 'competencias', start: 202.28, end: 283.88,
     desenho(s) {
       const { txt, ink, fill, shape, count, sublinha, circula, seta, clear, ilustra, G, C } = s;
-      txt(130, 120, 'O COMO · 30% DA NOTA', { size: 26, w: 800, color: C.green, ls: 5, nopen: true }, 202.6, 0.5);
-      txt(130, 195, 'Competências: nova escala', { size: 64, w: 800 }, 205.6, 1.3);
-      sublinha(132, 930, 222, C.green, 207.0);
-      txt(330, 330, 'ANTES', { size: 34, w: 900, color: C.soft, anchor: 'middle', ls: 4 }, 208.6, 0.4);
-      const antes = [['Nunca', 210.0], ['Raramente', 210.9], ['Às vezes', 211.9], ['Frequentemente', 213.6], ['Supera as expectativas', 214.8]];
+      txt(130, 120, 'O COMO · 30% DA NOTA', { size: 26, w: 800, color: C.green, ls: 5, nopen: true }, 202.48, 0.5);
+      txt(130, 195, 'Competências: nova escala', { size: 64, w: 800 }, 205.48, 1.3);
+      sublinha(132, 930, 222, C.green, 206.88);
+      txt(330, 330, 'ANTES', { size: 34, w: 900, color: C.soft, anchor: 'middle', ls: 4 }, 208.48, 0.4);
+      const antes = [['Nunca', 209.88], ['Raramente', 210.78], ['Às vezes', 211.78], ['Frequentemente', 213.48], ['Supera as expectativas', 214.68]];
       antes.forEach(([w, t], k) => {
         shape(G.rect(130, 370 + k * 95, 400, 70, 35), C.gray, { sw: 3, nopen: true }, t, 0.3);
         txt(330, 418 + k * 95, w, { size: w.length > 15 ? 26 : 32, w: 700, anchor: 'middle', nopen: true }, t + 0.15, 0.3);
       });
-      ink(G.cross(330, 600, 6.2), { color: C.red, sw: 9 }, 221.0, 0.7);
-      txt(330, 900, 'muita subjetividade', { size: 30, w: 700, color: C.red, anchor: 'middle' }, 221.8, 0.8);
-      seta(620, 600, 860, 600, 217.6, { bend: -0.1, sw: 6 });
-      txt(1300, 330, 'AGORA', { size: 34, w: 900, color: C.blue, anchor: 'middle', ls: 4 }, 218.2, 0.4);
-      txt(1300, 560, '0 a 10', { size: 180, w: 900, color: C.blue, anchor: 'middle' }, 219.2, 1.2);
-      txt(1300, 680, 'análise mais clara e objetiva', { size: 36, w: 700, anchor: 'middle' }, 229.5, 1.2);
-      clear(235.9);
+      ink(G.cross(330, 600, 6.2), { color: C.red, sw: 9 }, 220.88, 0.7);
+      txt(330, 900, 'muita subjetividade', { size: 30, w: 700, color: C.red, anchor: 'middle' }, 221.68, 0.8);
+      seta(620, 600, 860, 600, 217.48, { bend: -0.1, sw: 6 });
+      txt(1300, 330, 'AGORA', { size: 34, w: 900, color: C.blue, anchor: 'middle', ls: 4 }, 218.08, 0.4);
+      txt(1300, 560, '0 a 10', { size: 180, w: 900, color: C.blue, anchor: 'middle' }, 219.08, 1.2);
+      txt(1300, 680, 'análise mais clara e objetiva', { size: 36, w: 700, anchor: 'middle' }, 229.38, 1.2);
+      clear(235.78);
 
       // a régua de 0 a 10 com 6 faixas
-      txt(130, 150, 'A nova escala: 6 faixas', { size: 56, w: 800 }, 236.3, 1.0);
+      txt(130, 150, 'A nova escala: 6 faixas', { size: 56, w: 800 }, 236.18, 1.0);
       const X = v => 160 + v * 150, Y = 330;
       const faixas = [
-        [0, 3, '#F4B6B3', '0 a 2', 'Muito abaixo do esperado', 238.7],
-        [3, 5, '#F7D2A8', '3 a 4', 'Abaixo do esperado', 242.4],
-        [5, 7, '#FFE9A8', '5 a 6', 'Atende parcialmente', 244.7],
-        [7, 9, '#A6E8DE', '7 a 8', 'Atende ao esperado', 251.8],
-        [9, 10, '#BFC8FA', '9', 'Acima do esperado', 264.5],
-        [10, 11, '#8C9BEF', '10', 'Referência', 266.5],
+        [0, 3, '#F4B6B3', '0 a 2', 'Muito abaixo do esperado', 238.58],
+        [3, 5, '#F7D2A8', '3 a 4', 'Abaixo do esperado', 242.28],
+        [5, 7, '#FFE9A8', '5 a 6', 'Atende parcialmente', 244.58],
+        [7, 9, '#A6E8DE', '7 a 8', 'Atende ao esperado', 251.68],
+        [9, 10, '#BFC8FA', '9', 'Acima do esperado', 264.38],
+        [10, 11, '#8C9BEF', '10', 'Referência', 266.38],
       ];
-      ink(`M${X(0)},${Y + 40} L${X(11)},${Y + 40}`, { sw: 5 }, 236.2, 0.8);
+      ink(`M${X(0)},${Y + 40} L${X(11)},${Y + 40}`, { sw: 5 }, 236.08, 0.8);
       faixas.forEach(([a, b, cor, num, nome, t], k) => {
         shape(G.rect(X(a) + 4, Y - 40, X(b) - X(a) - 8, 80, 14), cor, { sw: 4, nopen: true }, t, 0.4);
         txt((X(a) + X(b)) / 2, Y + 14, num, { size: 40, w: 900, anchor: 'middle', nopen: true }, t + 0.2, 0.3);
@@ -287,139 +287,139 @@ export const CENAS = [
         txt((X(a) + X(b)) / 2, yl, nome, { size: num === '7 a 8' ? 30 : 26, w: num === '7 a 8' ? 900 : 700, color: num === '7 a 8' ? '#1E9E8C' : C.ink, anchor: 'middle' }, t + 0.5, 0.7);
       });
       // 7 ou 8 não é nota baixa
-      ilustra('corda-bamba', { tf: 'translate(60,470) scale(0.46)' }, 255.0, 2.2);
-      txt(1060, 640, '7 ou 8 NÃO é nota baixa:', { size: 46, w: 900, color: C.dark }, 251.8, 1.2);
-      txt(1060, 705, 'é exatamente o esperado.', { size: 46, w: 900, color: '#1E9E8C' }, 253.2, 1.1);
-      sublinha(1060, 1640, 728, C.green, 255.7);
-      circula((X(7) + X(9)) / 2, Y, 170, 70, 252.6, { color: C.green });
+      ilustra('corda-bamba', { tf: 'translate(60,470) scale(0.46)' }, 254.88, 2.2);
+      txt(1060, 640, '7 ou 8 NÃO é nota baixa:', { size: 46, w: 900, color: C.dark }, 251.68, 1.2);
+      txt(1060, 705, 'é exatamente o esperado.', { size: 46, w: 900, color: '#1E9E8C' }, 253.08, 1.1);
+      sublinha(1060, 1640, 728, C.green, 255.58);
+      circula((X(7) + X(9)) / 2, Y, 170, 70, 252.48, { color: C.green });
       // justificativa
-      txt(1060, 830, 'Notas 0 a 2, 9 e 10 exigem', { size: 36, w: 700 }, 270.9, 1.6);
-      txt(1060, 880, 'justificativa obrigatória', { size: 40, w: 900, color: C.red }, 274.6, 1.0);
-      circula(X(1.5), Y, 250, 62, 271.5, { color: C.red, d: 0.6 });
-      circula(X(10), Y, 175, 66, 272.8, { color: C.red, d: 0.6 });
+      txt(1060, 830, 'Notas 0 a 2, 9 e 10 exigem', { size: 36, w: 700 }, 270.78, 1.6);
+      txt(1060, 880, 'justificativa obrigatória', { size: 40, w: 900, color: C.red }, 274.48, 1.0);
+      circula(X(1.5), Y, 250, 62, 271.38, { color: C.red, d: 0.6 });
+      circula(X(10), Y, 175, 66, 272.68, { color: C.red, d: 0.6 });
     },
   },
   // ---------------- CENA 7: quem avalia (competências e cultura) ----------------
   {
-    id: 'quem-avalia', start: 284, end: 340.1,
+    id: 'quem-avalia', start: 283.88, end: 339.61,
     desenho(s) {
       const { txt, ink, fill, shape, count, sublinha, circula, seta, clear, ilustra, pessoa, G, C } = s;
-      txt(130, 120, 'QUEM AVALIA', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 284.2, 0.4);
-      txt(130, 195, 'Competências: quem dá a nota', { size: 60, w: 800 }, 284.5, 1.3);
-      sublinha(132, 990, 222, C.green, 285.9);
-      ilustra('gestora', { tf: 'translate(20,250) scale(0.75)' }, 286.2, 2.6);
-      txt(1180, 420, 'Autoavaliação', { size: 46, w: 800 }, 290.6, 0.7);
-      txt(1780, 420, '0%', { size: 64, w: 900, color: C.red, anchor: 'end' }, 291.6, 0.4);
+      txt(130, 120, 'QUEM AVALIA', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 284.08, 0.4);
+      txt(130, 195, 'Competências: quem dá a nota', { size: 60, w: 800 }, 284.38, 1.3);
+      sublinha(132, 990, 222, C.green, 285.78);
+      ilustra('gestora', { tf: 'translate(20,250) scale(0.75)' }, 286.08, 2.6);
+      txt(1180, 420, 'Autoavaliação', { size: 46, w: 800 }, 290.48, 0.7);
+      txt(1780, 420, '0%', { size: 64, w: 900, color: C.red, anchor: 'end' }, 291.48, 0.4);
       txt(1180, 470, 'não entra no cálculo', { size: 32, w: 600, color: C.soft }, 292, 0.7);
       txt(1180, 540, 'serve para reflexão e', { size: 32, w: 600, color: C.soft }, 297, 0.8);
-      txt(1180, 582, 'preparar o feedback', { size: 32, w: 600, color: C.soft }, 297.9, 0.8);
+      txt(1180, 582, 'preparar o feedback', { size: 32, w: 600, color: C.soft }, 297.41, 0.8);
       ink('M1170,640 L1800,640', { sw: 3, color: C.soft }, 306, 0.4);
-      txt(1180, 740, 'Gestor direto', { size: 50, w: 900, color: C.dark }, 306.5, 0.8);
-      count(1780, 740, 0, 100, '%', { size: 72, color: C.blue, anchor: 'end' }, 307.6, 1.2);
+      txt(1180, 740, 'Gestor direto', { size: 50, w: 900, color: C.dark }, 306.01, 0.8);
+      count(1780, 740, 0, 100, '%', { size: 72, color: C.blue, anchor: 'end' }, 307.11, 1.2);
       sublinha(1180, 1800, 768, C.green, 309);
-      clear(313.6);
+      clear(313.11);
 
-      txt(130, 120, 'QUEM AVALIA', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 313.9, 0.4);
-      txt(130, 195, 'Cultura: a dinâmica muda', { size: 60, w: 800 }, 314.1, 1.2);
-      sublinha(132, 870, 222, C.green, 315.4);
+      txt(130, 120, 'QUEM AVALIA', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 313.41, 0.4);
+      txt(130, 195, 'Cultura: a dinâmica muda', { size: 60, w: 800 }, 313.61, 1.2);
+      sublinha(132, 870, 222, C.green, 314.91);
       const X0 = 200, X1 = 1720, XM = X0 + (X1 - X0) * 0.7;
-      shape(G.rect(X0, 330, XM - X0, 110, 16), C.blue, { sw: 5 }, 316.4, 0.8);
+      shape(G.rect(X0, 330, XM - X0, 110, 16), C.blue, { sw: 5 }, 315.91, 0.8);
       txt((X0 + XM) / 2, 404, 'Gestor 70%', { size: 50, w: 900, color: C.white, anchor: 'middle', nopen: true }, 317, 0.6);
-      shape(G.rect(XM + 10, 330, X1 - XM - 10, 110, 16), C.green, { sw: 5 }, 318.3, 0.6);
-      txt((XM + X1) / 2 + 5, 404, '30%', { size: 50, w: 900, color: C.ink, anchor: 'middle', nopen: true }, 318.8, 0.4);
-      txt((XM + X1) / 2 + 5, 500, 'média de 2 clientes internos', { size: 30, w: 700, anchor: 'middle' }, 319.4, 1.0);
+      shape(G.rect(XM + 10, 330, X1 - XM - 10, 110, 16), C.green, { sw: 5 }, 317.81, 0.6);
+      txt((XM + X1) / 2 + 5, 404, '30%', { size: 50, w: 900, color: C.ink, anchor: 'middle', nopen: true }, 318.31, 0.4);
+      txt((XM + X1) / 2 + 5, 500, 'média de 2 clientes internos', { size: 30, w: 700, anchor: 'middle' }, 318.91, 1.0);
       txt(960, 600, 'Quem indica os clientes internos?', { size: 40, w: 800, anchor: 'middle' }, 322, 1.2);
-      pessoa(620, 820, C.blue, 325.4, 0.8);
+      pessoa(620, 820, C.blue, 324.91, 0.8);
       txt(620, 935, '1 indicado pelo profissional', { size: 30, w: 700, anchor: 'middle' }, 327, 1.0);
-      pessoa(1300, 820, C.green, 327.6, 0.8);
-      txt(1300, 935, '1 indicado pelo gestor', { size: 30, w: 700, anchor: 'middle' }, 328.4, 0.9);
-      clear(333.5);
+      pessoa(1300, 820, C.green, 327.11, 0.8);
+      txt(1300, 935, '1 indicado pelo gestor', { size: 30, w: 700, anchor: 'middle' }, 327.91, 0.9);
+      clear(333.01);
 
-      ilustra('sigilo', { tf: 'translate(20,170) scale(0.78)' }, 333.6, 2.4);
-      txt(1240, 420, 'Notas dos clientes', { size: 48, w: 800 }, 334.6, 0.9);
-      txt(1240, 490, 'internos são', { size: 48, w: 800 }, 335.6, 0.6);
-      txt(1240, 575, 'confidenciais', { size: 66, w: 900, color: C.blue }, 336.3, 0.8);
-      sublinha(1240, 1700, 600, C.green, 337.2);
-      txt(1240, 700, 'Ninguém vê quem deu o quê.', { size: 36, w: 700, color: C.soft }, 338.1, 1.0);
+      ilustra('sigilo', { tf: 'translate(20,170) scale(0.78)' }, 333.11, 2.4);
+      txt(1240, 420, 'Notas dos clientes', { size: 48, w: 800 }, 334.11, 0.9);
+      txt(1240, 490, 'internos são', { size: 48, w: 800 }, 335.11, 0.6);
+      txt(1240, 575, 'confidenciais', { size: 66, w: 900, color: C.blue }, 335.81, 0.8);
+      sublinha(1240, 1700, 600, C.green, 336.71);
+      txt(1240, 700, 'Ninguém vê quem deu o quê.', { size: 36, w: 700, color: C.soft }, 337.61, 1.0);
     },
   },
 
   // ---------------- CENA 8: juntando tudo (92,6%) ----------------
   {
-    id: 'conta-final', start: 340.1, end: 394.17,
+    id: 'conta-final', start: 339.61, end: 393.68,
     desenho(s) {
       const { txt, ink, fill, shape, count, sublinha, circula, seta, clear, G, C } = s;
-      txt(130, 120, 'JUNTANDO TUDO', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 340.3, 0.4);
-      txt(130, 195, 'A nota final, na prática', { size: 60, w: 800 }, 340.6, 1.2);
+      txt(130, 120, 'JUNTANDO TUDO', { size: 26, w: 800, color: C.blue, ls: 5, nopen: true }, 339.81, 0.4);
+      txt(130, 195, 'A nota final, na prática', { size: 60, w: 800 }, 340.11, 1.2);
       sublinha(132, 820, 222, C.green, 342);
       const L = 160, V = 900, P = 1180, R = 1560, Y = [350, 500, 650];
       // metas
-      shape(G.rect(L - 30, Y[0] - 62, 60, 80, 12), C.blue, { sw: 3, nopen: true }, 347.17, 0.3);
-      txt(L + 50, Y[0], 'Metas', { size: 50, w: 900 }, 347.37, 0.5);
-      count(V, Y[0], 0, 97, '%', { size: 58, w: 900, color: C.ink, anchor: 'end' }, 350.17, 0.8);
-      txt(P, Y[0], '× 70%', { size: 50, w: 700, color: C.soft, anchor: 'end' }, 351.77, 0.5);
-      txt(P + 60, Y[0], '=', { size: 50, w: 700, color: C.soft }, 353.17, 0.2);
-      count(R, Y[0], 0, 67.9, '', { size: 64, w: 900, color: C.blue, anchor: 'end', dec: 1 }, 353.77, 1.2);
+      shape(G.rect(L - 30, Y[0] - 62, 60, 80, 12), C.blue, { sw: 3, nopen: true }, 346.68, 0.3);
+      txt(L + 50, Y[0], 'Metas', { size: 50, w: 900 }, 346.88, 0.5);
+      count(V, Y[0], 0, 97, '%', { size: 58, w: 900, color: C.ink, anchor: 'end' }, 349.68, 0.8);
+      txt(P, Y[0], '× 70%', { size: 50, w: 700, color: C.soft, anchor: 'end' }, 351.28, 0.5);
+      txt(P + 60, Y[0], '=', { size: 50, w: 700, color: C.soft }, 352.68, 0.2);
+      count(R, Y[0], 0, 67.9, '', { size: 64, w: 900, color: C.blue, anchor: 'end', dec: 1 }, 353.28, 1.2);
       // competências
-      shape(G.rect(L - 30, Y[1] - 62, 60, 80, 12), C.green, { sw: 3, nopen: true }, 359.97, 0.3);
-      txt(L + 50, Y[1], 'Competências', { size: 50, w: 900 }, 360.17, 0.6);
-      txt(L + 50, Y[1] + 50, 'nota 8 do gestor = 80%', { size: 28, w: 600, color: C.soft }, 362.17, 1.0);
-      count(V, Y[1], 0, 80, '%', { size: 58, w: 900, color: C.ink, anchor: 'end' }, 362.97, 0.8);
-      txt(P, Y[1], '× 20%', { size: 50, w: 700, color: C.soft, anchor: 'end' }, 364.97, 0.5);
-      txt(P + 60, Y[1], '=', { size: 50, w: 700, color: C.soft }, 366.37, 0.2);
-      count(R, Y[1], 0, 16, '', { size: 64, w: 900, color: '#1E9E8C', anchor: 'end' }, 366.77, 1.0);
+      shape(G.rect(L - 30, Y[1] - 62, 60, 80, 12), C.green, { sw: 3, nopen: true }, 359.48, 0.3);
+      txt(L + 50, Y[1], 'Competências', { size: 50, w: 900 }, 359.68, 0.6);
+      txt(L + 50, Y[1] + 50, 'nota 8 do gestor = 80%', { size: 28, w: 600, color: C.soft }, 361.68, 1.0);
+      count(V, Y[1], 0, 80, '%', { size: 58, w: 900, color: C.ink, anchor: 'end' }, 362.48, 0.8);
+      txt(P, Y[1], '× 20%', { size: 50, w: 700, color: C.soft, anchor: 'end' }, 364.48, 0.5);
+      txt(P + 60, Y[1], '=', { size: 50, w: 700, color: C.soft }, 365.88, 0.2);
+      count(R, Y[1], 0, 16, '', { size: 64, w: 900, color: '#1E9E8C', anchor: 'end' }, 366.28, 1.0);
       // cultura
-      shape(G.rect(L - 30, Y[2] - 62, 60, 80, 12), C.dark, { sw: 3, nopen: true }, 369.37, 0.3);
-      txt(L + 50, Y[2], 'Cultura', { size: 50, w: 900 }, 369.57, 0.5);
-      txt(L + 50, Y[2] + 50, 'gestor 9 × 70% + clientes internos 8 × 30%', { size: 28, w: 600, color: C.soft }, 371.97, 2.6);
-      count(V, Y[2], 0, 87, '%', { size: 58, w: 900, color: C.ink, anchor: 'end' }, 376.57, 0.8);
-      txt(P, Y[2], '× 10%', { size: 50, w: 700, color: C.soft, anchor: 'end' }, 379.17, 0.5);
-      txt(P + 60, Y[2], '=', { size: 50, w: 700, color: C.soft }, 380.97, 0.2);
-      count(R, Y[2], 0, 8.7, '', { size: 64, w: 900, color: C.dark, anchor: 'end', dec: 1 }, 381.37, 1.0);
+      shape(G.rect(L - 30, Y[2] - 62, 60, 80, 12), C.dark, { sw: 3, nopen: true }, 368.88, 0.3);
+      txt(L + 50, Y[2], 'Cultura', { size: 50, w: 900 }, 369.08, 0.5);
+      txt(L + 50, Y[2] + 50, 'gestor 9 × 70% + clientes internos 8 × 30%', { size: 28, w: 600, color: C.soft }, 371.48, 2.6);
+      count(V, Y[2], 0, 87, '%', { size: 58, w: 900, color: C.ink, anchor: 'end' }, 376.08, 0.8);
+      txt(P, Y[2], '× 10%', { size: 50, w: 700, color: C.soft, anchor: 'end' }, 378.68, 0.5);
+      txt(P + 60, Y[2], '=', { size: 50, w: 700, color: C.soft }, 380.48, 0.2);
+      count(R, Y[2], 0, 8.7, '', { size: 64, w: 900, color: C.dark, anchor: 'end', dec: 1 }, 380.88, 1.0);
       // soma
-      ink(`M${L - 40},${Y[2] + 100} L${R + 60},${Y[2] + 100}`, { sw: 5 }, 383.47, 0.6);
-      txt(L + 50, Y[2] + 210, 'Nota final', { size: 58, w: 900 }, 384.17, 0.6);
-      txt(P + 60, Y[2] + 200, '67,9 + 16 + 8,7 =', { size: 34, w: 600, color: C.soft, anchor: 'end' }, 384.57, 2.2);
-      count(R + 40, Y[2] + 215, 0, 92.6, '%', { size: 96, w: 900, color: C.blue, anchor: 'end', dec: 1 }, 389.57, 1.6);
-      circula(R - 120, Y[2] + 180, 230, 85, 391.57, { color: C.green, d: 0.8 });
+      ink(`M${L - 40},${Y[2] + 100} L${R + 60},${Y[2] + 100}`, { sw: 5 }, 382.98, 0.6);
+      txt(L + 50, Y[2] + 210, 'Nota final', { size: 58, w: 900 }, 383.68, 0.6);
+      txt(P + 60, Y[2] + 200, '67,9 + 16 + 8,7 =', { size: 34, w: 600, color: C.soft, anchor: 'end' }, 384.08, 2.2);
+      count(R + 40, Y[2] + 215, 0, 92.6, '%', { size: 96, w: 900, color: C.blue, anchor: 'end', dec: 1 }, 389.08, 1.6);
+      circula(R - 120, Y[2] + 180, 230, 85, 391.08, { color: C.green, d: 0.8 });
     },
   },
 
   // ---------------- CENA 9: o recado, o feedback e o fechamento ----------------
   {
-    id: 'fechamento', start: 394.17, end: 450.77,
+    id: 'fechamento', start: 393.68, end: 449.83,
     desenho(s) {
       const { txt, ink, fill, shape, count, sublinha, circula, seta, clear, ilustra, img, G, C } = s;
-      txt(960, 260, 'O recado', { size: 34, w: 900, color: C.soft, anchor: 'middle', ls: 6 }, 394.37, 0.5);
-      txt(960, 400, 'Gênio nas metas', { size: 70, w: 900, color: C.blue, anchor: 'middle' }, 396.97, 1.0);
-      txt(960, 500, '+ trator com os colegas', { size: 60, w: 900, color: C.red, anchor: 'middle' }, 399.77, 1.2);
-      ink(G.arrow(960, 545, 960, 640, 0, 22), { sw: 6 }, 402.97, 0.4);
-      txt(960, 740, 'competências e cultura derrubam a nota', { size: 46, w: 800, anchor: 'middle' }, 403.37, 1.8);
-      sublinha(560, 1360, 765, C.green, 405.37);
-      clear(407.37);
+      txt(960, 260, 'O recado', { size: 34, w: 900, color: C.soft, anchor: 'middle', ls: 6 }, 393.88, 0.5);
+      txt(960, 400, 'Gênio nas metas', { size: 70, w: 900, color: C.blue, anchor: 'middle' }, 396.48, 1.0);
+      txt(960, 500, '+ trator com os colegas', { size: 60, w: 900, color: C.red, anchor: 'middle' }, 399.28, 1.2);
+      ink(G.arrow(960, 545, 960, 640, 0, 22), { sw: 6 }, 402.48, 0.4);
+      txt(960, 740, 'competências e cultura derrubam a nota', { size: 46, w: 800, anchor: 'middle' }, 402.88, 1.8);
+      sublinha(560, 1360, 765, C.green, 404.88);
+      clear(406.88);
 
-      ilustra('feedback', { tf: 'translate(20,160) scale(0.78)' }, 407.57, 2.6);
-      txt(1240, 380, 'Feedback', { size: 70, w: 900, color: C.blue }, 412.87, 0.7);
-      txt(1240, 450, 'presencial, com o gestor', { size: 40, w: 800 }, 413.77, 1.1);
-      sublinha(1240, 1820, 475, C.green, 415.07);
-      txt(1240, 560, 'Não é só conferir um número:', { size: 32, w: 600, color: C.soft }, 415.37, 1.0);
-      txt(1240, 605, 'é alinhar rotas.', { size: 40, w: 800, color: C.dark }, 417.57, 0.8);
-      txt(1240, 710, 'Registro obrigatório no sistema,', { size: 32, w: 700 }, 420.27, 1.1);
-      txt(1240, 755, 'em etapa própria da avaliação final', { size: 32, w: 700 }, 423.97, 1.4);
-      clear(426.57);
+      ilustra('feedback', { tf: 'translate(20,160) scale(0.78)' }, 407.08, 2.6);
+      txt(1240, 380, 'Feedback', { size: 70, w: 900, color: C.blue }, 412.38, 0.7);
+      txt(1240, 450, 'presencial, com o gestor', { size: 40, w: 800 }, 413.28, 1.1);
+      sublinha(1240, 1820, 475, C.green, 414.58);
+      txt(1240, 560, 'Não é só conferir um número:', { size: 32, w: 600, color: C.soft }, 414.88, 1.0);
+      txt(1240, 605, 'é alinhar rotas.', { size: 40, w: 800, color: C.dark }, 417.08, 0.8);
+      txt(1240, 710, 'Registro obrigatório no sistema,', { size: 32, w: 700 }, 419.78, 1.1);
+      txt(1240, 755, 'em etapa própria da avaliação final', { size: 32, w: 700 }, 423.48, 1.4);
+      clear(426.08);
 
-      txt(960, 330, 'Dúvidas sobre o ciclo?', { size: 54, w: 800, anchor: 'middle' }, 426.87, 1.2);
+      txt(960, 330, 'Dúvidas sobre o ciclo?', { size: 54, w: 800, anchor: 'middle' }, 426.37, 1.2);
       const ex = 600, ey = 430;
-      ink([G.rect(ex, ey, 140, 96, 10), `M${ex},${ey} L${ex + 70},${ey + 52} L${ex + 140},${ey}`], { sw: 5, color: C.blue }, 430.17, 0.7);
-      txt(780, 500, 'remuneracao.rh@cury.net', { size: 62, w: 900, color: C.blue }, 431.07, 2.2);
-      sublinha(780, 1560, 528, C.green, 433.57);
-      clear(440.17);
+      ink([G.rect(ex, ey, 140, 96, 10), `M${ex},${ey} L${ex + 70},${ey + 52} L${ex + 140},${ey}`], { sw: 5, color: C.blue }, 429.52, 0.7);
+      txt(780, 500, 'remuneracao.rh@cury.net', { size: 62, w: 900, color: C.blue }, 430.38, 2.2);
+      sublinha(780, 1560, 528, C.green, 432.76);
+      clear(439.23);
 
-      ilustra('vistoria', { tf: 'translate(20,120) scale(0.8)' }, 440.37, 2.4);
-      txt(1180, 450, 'Se a vistoria', { size: 60, w: 800 }, 446.37, 0.7);
-      txt(1180, 530, 'fosse hoje,', { size: 60, w: 800 }, 447.07, 0.6);
-      txt(1180, 640, 'o seu prédio passaria?', { size: 54, w: 900, color: C.blue }, 447.77, 1.2);
-      sublinha(1180, 1800, 665, C.green, 449.07, { d: 0.4 });
+      ilustra('vistoria', { tf: 'translate(20,120) scale(0.8)' }, 439.43, 2.4);
+      txt(1180, 450, 'Se a vistoria', { size: 60, w: 800 }, 445.43, 0.7);
+      txt(1180, 530, 'fosse hoje,', { size: 60, w: 800 }, 446.13, 0.6);
+      txt(1180, 640, 'o seu prédio passaria?', { size: 54, w: 900, color: C.blue }, 446.83, 1.2);
+      sublinha(1180, 1800, 665, C.green, 448.13, { d: 0.4 });
     },
   },
 ];
